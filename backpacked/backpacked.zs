@@ -1,3 +1,5 @@
+craftingTable.removeByModid("backpacked");
+
 craftingTable.addShaped("acacia_bp_shelf", <item:backpacked:acacia_backpack_shelf>, [
     [<item:tfc:wood/lumber/acacia>, <item:tfc:wood/lumber/acacia>, <item:tfc:wood/lumber/acacia>],
     [<tag:items:forge:rods/wooden>, Setup.air, <tag:items:forge:rods/wooden>]

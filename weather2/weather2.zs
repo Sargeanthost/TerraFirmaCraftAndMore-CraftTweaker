@@ -1,3 +1,5 @@
+craftingTable.removeByModid("weather2");
+
 craftingTable.addShaped("weather_deflector", <item:weather2:weather_deflector>,
     [[Setup.ironVariantsTag, <item:minecraft:redstone>, Setup.ironVariantsTag],
     [<item:minecraft:redstone>,<item:weather2:weather_item>,<item:minecraft:redstone>],
