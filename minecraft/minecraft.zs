@@ -19,11 +19,19 @@ craftingTable.removeByName("minecraft:light_gray_concrete_powder");
 craftingTable.removeByName("minecraft:piston");
 craftingTable.removeByName("minecraft:hopper");
 craftingTable.removeByName("minecraft:minecart");
+craftingTable.removeByName("minecraft:crossbow");
 craftingTable.remove(<item:minecraft:tnt>);
+craftingTable.remove(<item:minecraft:iron_bars>);
+craftingTable.remove(<item:minecraft:bundle>);
+craftingTable.remove(<item:minecraft:fishing_rod>);
+craftingTable.addShaped("bundle", <item:minecraft:bundle>,[[Setup.stringTag, <item:tfc:burlap_cloth>, Setup.stringTag],[<item:tfc:burlap_cloth>, Setup.air, <item:tfc:burlap_cloth>],[<item:tfc:burlap_cloth>,<item:tfc:burlap_cloth>,<item:tfc:burlap_cloth>]]);
 craftingTable.addShaped("tnt", <item:minecraft:tnt>, 
     [[<item:minecraft:gunpowder>,<tag:items:forge:sand>,<item:minecraft:gunpowder>],
     [<tag:items:forge:sand>,<item:minecraft:gunpowder>,<tag:items:forge:sand>],
     [<item:minecraft:gunpowder>,<tag:items:forge:sand>,<item:minecraft:gunpowder>]]);
-<block:minecraft:glass>.addLootModifier("quark_shard", CommonLootModifiers.clearing(CommonLootModifiers.add(<item:quark:clear_shard>)));
-//these disapeared from jei, not sure what happened
+craftingTable.addShaped("iron_bars", <item:minecraft:iron_bars> * 22, 
+    [[<item:tfc:metal/rod/wrought_iron>,<item:tfc:metal/sheet/wrought_iron>,<item:tfc:metal/rod/wrought_iron>],
+    [<item:tfc:metal/rod/wrought_iron>,<item:tfc:metal/sheet/wrought_iron>,<item:tfc:metal/rod/wrought_iron>]]);
+<block:minecraft:glass>.addLootModifier("quark_shard", CommonLootModifiers.clearing(CommonLootModifiers.add(<item:quark:clear_shard> * 3)));
+
 

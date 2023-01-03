@@ -9,8 +9,7 @@ public class Setup{
         "warped":<item:tfc:wood/lumber/willow>
     };
 
-    //string of names of things to remove. utilize by iterating over this list and using craftingTable.getRecipeByName("minecraft:emerald_block") to get as Recipie
-    public static val toRemove = [""];
+    public static val toRemove = [<item:minecraft:stone_sword>, <item:minecraft:stone_hoe>, <item:minecraft:stone_shovel>, <item:minecraft:stone_axe>,<item:minecraft:stone_pickaxe>];
     public static val air = <item:minecraft:air>;
 
     public static val ironVariantsTag = <tag:items:tfcam:ingots/iron_variants>;
@@ -21,7 +20,10 @@ Setup.ironVariantsTag.add(<item:tfc:metal/ingot/pig_iron>,<item:tfc:metal/ingot/
 Setup.goldVariantsTag.add(<item:tfc:metal/ingot/rose_gold>,<item:tfc:metal/ingot/gold>,<item:minecraft:gold_ingot>);
 Setup.stringTag.add(<item:tfc:jute_fiber>);
 
+for item in Setup.toRemove{
+    craftingTable.remove(item);
+}
 
 // Replacer.forMods("minecraft").replace(<item:minecraft:iron_ingot>, Setup.ironVariantsTag).suppressWarnings().execute();
-// Replacer.forMods("ironchest").replace(<item:minecraft:iron_ingot>, Setup.ironVariantsTag).suppressWarnings().execute();
+Replacer.forMods("ironchest").replace(<item:minecraft:iron_ingot>, Setup.ironVariantsTag).suppressWarnings().execute();
 // Replacer.forMods("quark").replace(<item:minecraft:iron_ingot>, Setup.ironVariantsTag).excluding().suppressWarnings().execute();

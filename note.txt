@@ -6,3 +6,9 @@ make nuggets for iron and gold with chisel. 9 output, chisel takes 1 damage. unt
 planks = 4 lumber
 log = 8 lumber
 how to get cut emerald?
+make tag for vines
+make glass drop shards
+adjust loot from quark dungeons
+try figuring this out: Replacer.forRecipes(craftingTable.getRecipeByName("quark:framed_glass")).replace(<item:minecraft:iron_ingot>, <item:tfc:metal/rod/wrought_iron>).execute();
+use quern to grind down glowing ink sack into 12 glow stone powder
+tool
