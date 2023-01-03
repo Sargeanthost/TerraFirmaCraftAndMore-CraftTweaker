@@ -1,0 +1,8 @@
+add support for dramatic skies by thebaum64
+search for all sand and cobble and replace with forge tags
+replace minecraft woods with tag that includes minecraft woods and tfc woods
+remove all furnaces, including quark and specialty furnaces
+make nuggets for iron and gold with chisel. 9 output, chisel takes 1 damage. until TFCtweak is out, have wraught iron make minecraft:iron_nugget and have gold make minecraft:gold_nugget. no way to revert as of now
+planks = 4 lumber
+log = 8 lumber
+how to get cut emerald?
