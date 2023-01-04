@@ -20,6 +20,12 @@ craftingTable.removeByName("minecraft:piston");
 craftingTable.removeByName("minecraft:hopper");
 craftingTable.removeByName("minecraft:minecart");
 craftingTable.removeByName("minecraft:crossbow");
+craftingTable.remove(<item:minecraft:furnace>);
+craftingTable.remove(<item:minecraft:chain>);
+craftingTable.remove(<item:minecraft:smithing_table>);
+craftingTable.remove(<item:minecraft:grindstone>);
+craftingTable.remove(<item:minecraft:furnace_minecart>);
+craftingTable.remove(<item:minecraft:blast_furnace>);
 craftingTable.remove(<item:minecraft:tnt>);
 craftingTable.remove(<item:minecraft:iron_bars>);
 craftingTable.remove(<item:minecraft:bundle>);
@@ -32,6 +38,10 @@ craftingTable.addShaped("tnt", <item:minecraft:tnt>,
 craftingTable.addShaped("iron_bars", <item:minecraft:iron_bars> * 22, 
     [[<item:tfc:metal/rod/wrought_iron>,<item:tfc:metal/sheet/wrought_iron>,<item:tfc:metal/rod/wrought_iron>],
     [<item:tfc:metal/rod/wrought_iron>,<item:tfc:metal/sheet/wrought_iron>,<item:tfc:metal/rod/wrought_iron>]]);
+craftingTable.addShaped("barrel", <item:minecraft:barrel>, 
+    [[<tag:items:minecraft:planks>,<tag:items:tfc:lumber>,<tag:items:minecraft:planks>],
+    [<tag:items:forge:rods/copper>,Setup.air,<tag:items:forge:rods/copper>],
+    [<tag:items:minecraft:planks>,<tag:items:tfc:lumber>,<tag:items:minecraft:planks>]]);
 <block:minecraft:glass>.addLootModifier("quark_shard", CommonLootModifiers.clearing(CommonLootModifiers.add(<item:quark:clear_shard> * 3)));
 
 

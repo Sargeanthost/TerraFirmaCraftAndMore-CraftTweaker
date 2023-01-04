@@ -16,6 +16,11 @@ craftingTable.remove(<item:quark:gold_button>);
 craftingTable.remove(<item:quark:abacus>);
 craftingTable.remove(<item:quark:framed_glass>);
 craftingTable.remove(<item:quark:gold_bars>);
+craftingTable.remove(<item:quark:deepslate_furnace>);
+craftingTable.remove(<item:quark:blackstone_furnace>);
+craftingTable.remove(<item:quark:stone_lamp>);
+craftingTable.remove(<item:quark:stone_brick_lamp>);
+craftingTable.removeByName("quark:tweaks/crafting/utility/misc/tnt_minecart");
 craftingTable.addShapeless("quark_iron_button", <item:quark:iron_button> *2, [<tag:items:minecraft:wooden_buttons>, <item:tfc:metal/sheet/wrought_iron>]);
 craftingTable.addShapeless("quark_gold_button", <item:quark:gold_button> *2, [<tag:items:minecraft:wooden_buttons>, <item:tfc:metal/sheet/gold>]);
 craftingTable.addShaped("seed_pouch",<item:quark:seed_pouch>,
