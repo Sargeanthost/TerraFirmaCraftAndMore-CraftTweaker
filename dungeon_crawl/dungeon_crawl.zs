@@ -1,6 +1,8 @@
-//modify loot tables
+
 // import crafttweaker.api.loot.modifier.CommonLootModifiers;
-// <block:minecraft:dirt>.addLootModifier("iron",CommonLootModifiers.clearing(CommonLootModifiers.add(<item:minecraft:iron_ingot>)));
-// https://docs.blamejared.com/1.18/en/vanilla/api/loot/modifier/BlockLootModifiers
-//not spawning?
-//https://github.com/xyroc/DungeonCrawl/tree/1.18.2/src/datagen/java/xiroc/dungeoncrawl/data/loot
+
+
+import crafttweaker.api.resource.ResourceLocation;
+
+val tfcDungeonBiomes = [new ResourceLocation("tfc","plains"),new ResourceLocation("tfc","hills"),new ResourceLocation("tfc","lowlands"),new ResourceLocation("tfc","rolling_hills"),new ResourceLocation("tfc","badlands"),new ResourceLocation("tfc","plateau"),new ResourceLocation("tfc","old_mountains"),new ResourceLocation("tfc","inverted_badlands"),new ResourceLocation("tfc","mountains"),new ResourceLocation("tfc","plains")];
+<tag:worldgen/biome:dungeoncrawl:has_structure/dungeon>.addId(tfcDungeonBiome);

@@ -24,4 +24,7 @@ use quern to grind down glowing ink sack into 12 glow stone powder
 add back dungeons enhanced and strcture gel, getting rid of villager spawning structures. adjust loot table as well. list of acceptable structures:
 * flying dutchman
 
-edit dungeon crawl loot table
+edit dungeon crawl loot table. 
+<block:minecraft:dirt>.addLootModifier("iron",CommonLootModifiers.clearing(CommonLootModifiers.add(<item:minecraft:iron_ingot>)));
+https://docs.blamejared.com/1.18/en/vanilla/api/loot/modifier/BlockLootModifiers
+ https://github.com/xyroc/DungeonCrawl/tree/1.18.2/src/datagen/java/xiroc/dungeoncrawl/data/loot
