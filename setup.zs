@@ -15,15 +15,32 @@ public class Setup{
     public static val ironVariantsTag = <tag:items:tfcam:ingots/iron_variants>;
     public static val goldVariantsTag = <tag:items:tfcam:ingots/gold_variants>;
     public static val stringTag = <tag:items:forge:string>;
+    public static val vinesTag = <tag:items:tfcam:vines>;
+    public static val normalStoneBricksTag = <tag:items:tfcam:stone_bricks/normal>;
+    public static val mossyStoneBricksTag = <tag:items:tfc:mossy_stone_bricks>;
+    public static val sandstoneTag = <tag:items:tfcam:sandstone>;//all sandstone types, so making new tag instead of adding to forge
+
 }
 Setup.ironVariantsTag.add(<item:tfc:metal/ingot/pig_iron>,<item:tfc:metal/ingot/cast_iron>,<item:tfc:metal/ingot/wrought_iron>,<item:minecraft:iron_ingot>);
 Setup.goldVariantsTag.add(<item:tfc:metal/ingot/rose_gold>,<item:tfc:metal/ingot/gold>,<item:minecraft:gold_ingot>);
 Setup.stringTag.add(<item:tfc:jute_fiber>);
+Setup.vinesTag.add(<item:tfc:plant/jungle_vines>,<item:tfc:plant/hanging_vines>,<item:minecraft:vine>);
+Setup.mossyStoneBricksTag.add(<item:minecraft:mossy_stone_bricks>);
+Setup.normalStoneBricksTag.add(<item:minecraft:stone_bricks>,<item:minecraft:chiseled_stone_bricks>);
+Setup.sandstoneTag.add(<tag:items:forge:sandstone>);
+Setup.sandstoneTag.add(<item:quark:sandstone_bricks>,<item:quark:red_sandstone_bricks>,<item:tfc:smooth_sandstone/white>,<item:quark:chiseled_soul_sandstone>, 
+<item:quark:cut_soul_sandstone>,<item:quark:smooth_soul_sandstone>,<item:tfc:raw_sandstone/brown>,<item:tfc:smooth_sandstone/brown>,<item:tfc:cut_sandstone/brown>,<item:tfc:raw_sandstone/white>,
+<item:tfc:cut_sandstone/white>,<item:tfc:raw_sandstone/green>,<item:tfc:smooth_sandstone/green>,<item:tfc:cut_sandstone/green>,<item:tfc:raw_sandstone/pink>,<item:tfc:smooth_sandstone/pink>,
+<item:tfc:cut_sandstone/pink>,<item:tfc:raw_sandstone/yellow>,<item:tfc:cut_sandstone/yellow>,<item:tfc:smooth_sandstone/yellow>,<item:tfc:cut_sandstone/red>,<item:tfc:smooth_sandstone/red>,
+<item:tfc:raw_sandstone/red>,<item:tfc:cut_sandstone/black>,<item:tfc:smooth_sandstone/black>,<item:tfc:raw_sandstone/black>);
 
 for item in Setup.toRemove{
     craftingTable.remove(item);
 }
+for brick in <tag:items:forge:stone_bricks>{
+    if (!(brick in Setup.mossyStoneBricksTag)){
+        Setup.normalStoneBricksTag.add(brick);
+    } 
+}
 
-// Replacer.forMods("minecraft").replace(<item:minecraft:iron_ingot>, Setup.ironVariantsTag).suppressWarnings().execute();
 Replacer.forMods("ironchest").replace(<item:minecraft:iron_ingot>, Setup.ironVariantsTag).suppressWarnings().execute();
-// Replacer.forMods("quark").replace(<item:minecraft:iron_ingot>, Setup.ironVariantsTag).excluding().suppressWarnings().execute();
