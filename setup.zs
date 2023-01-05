@@ -12,13 +12,13 @@ public class Setup{
     public static val toRemove = [<item:minecraft:stone_sword>, <item:minecraft:stone_hoe>, <item:minecraft:stone_shovel>, <item:minecraft:stone_axe>,<item:minecraft:stone_pickaxe>];
     public static val air = <item:minecraft:air>;
 
-    public static val ironVariantsTag = <tag:items:tfcam:ingots/iron_variants>;
-    public static val goldVariantsTag = <tag:items:tfcam:ingots/gold_variants>;
+    public static val ironVariantsTag = <tag:items:crafttweaker:ingots/iron_variants>;
+    public static val goldVariantsTag = <tag:items:crafttweaker:ingots/gold_variants>;
     public static val stringTag = <tag:items:forge:string>;
-    public static val vinesTag = <tag:items:tfcam:vines>;
-    public static val normalStoneBricksTag = <tag:items:tfcam:stone_bricks/normal>;
+    public static val vinesTag = <tag:items:crafttweaker:vines>;
+    public static val normalStoneBricksTag = <tag:items:crafttweaker:stone_bricks/normal>;
     public static val mossyStoneBricksTag = <tag:items:tfc:mossy_stone_bricks>;
-    public static val sandstoneTag = <tag:items:tfcam:sandstone>;//all sandstone types, so making new tag instead of adding to forge
+    public static val sandstoneTag = <tag:items:crafttweaker:sandstone>;//all sandstone types, so making new tag instead of adding to forge
 
 }
 Setup.ironVariantsTag.add(<item:tfc:metal/ingot/pig_iron>,<item:tfc:metal/ingot/cast_iron>,<item:tfc:metal/ingot/wrought_iron>,<item:minecraft:iron_ingot>);
