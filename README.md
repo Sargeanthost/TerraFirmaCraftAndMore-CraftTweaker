@@ -53,8 +53,22 @@ https://docs.blamejared.com/1.18/en/vanilla/api/loot/modifier/BlockLootModifiers
 
  only runes will be allowed to be found. no enchanted books (you can read them which doesnt follow the lore)
 
- disable pickarang
+ disable flamarang
 
  remove stonecutter access in future version since cant use chisel easily now
 
  make chains meltable
+
+check firmalife recipes
+
+gemstones can be found in:
+cut_emerald : diorite
+cut diamond: gabbro
+cut amethyst: dolomite, claystone
+cut lapis: marble, limestone
+cut opal: quartzite
+cut pyrite: phyllite, basalt, andesite, dacite, rhyolite, shist, slate
+cut ruby: chert
+cut sapphire: chalk
+cut topaz:granite
+
