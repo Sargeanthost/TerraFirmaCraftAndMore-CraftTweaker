@@ -62,3 +62,68 @@ gemstones can be found in:
 * cut ruby: chert
 * cut sapphire: chalk
 * cut topaz:granite
+
+To convert minecraft loot syntax of 
+```
+chest("food"), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .name("food")
+                        .setRolls(UniformGenerator.between(9, 11))
+                        .add(LootItem.lootTableItem(Items.APPLE)
+                                .setWeight(3)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
+```
+to zenscript, use the following:
+
+First, get the number of items that will be in the chest. using the context.random, pass it to a function that will return the number. this function will take a lower and upper bound. use `((random.nextFloat() * (max - min)) + min) as int;`\
+
+Second, for each roll, pass an associated list to a function that will choose one based on the weight thats associated with them. for example:
+
+function({stone_stair : 2, stone_block : 1, stone_sword : 39}) as IItemStack -> stone_sword (most probable outcome)
+
+this will make it so the stone sword has a probability of 39/42 being selected. Do this by accumulating the weights. this will be the bound. then call `random.nextInt(bound)` (this may be exclusive. if so add one to bound). if the number is 0, return stone block, if the number is 1 or 2, return stone stair, else return stone sword.
+
+since we were pasing in this array for each roll we have, we can accumulate them into an array. make a new array in the lambda function, and return it. the pseudo code for all the above is
+
+loot.modifiers.register("stage_1",
+    LootConditions.only(LootTableIdLootCondition.create(<resource:dungeoncrawl:chests/stage_1>)),
+    (drops, context) =>{
+        var random = context.random;
+        var rolls = Setup.getRolls(random, 6, 9);
+        var list = new stdlib.List<IItemStack>(); // init empty array to size of rolls
+        val assoArray = {
+                <item:minecraft:stone> : 1,
+                <item:minecraft:stone_sword> : 1}; // init loot table with weights
+        for i in 0..rolls { //again, check if exclusive
+                list.add(Setup.getWeightedItem(random, assoArray));
+        }
+        return list;}
+);
+
+
+
+setRolls(UniformGenerator.between(low,high) = calling 
+setWeight() = addWithRandomChance(item % weight/total weight) =
+SetItemCountFunction.setCount(UniformGenerator.between(low,high) = 
+
+> probably by multiple chains
+or like
+CommonLootModifiers.addAllWithChance(<item:minecraft:honey_bottle> % 50, <item:minecraft:honey_bottle> % 13)
+that would be two rolls for a honey bottle
+alternatively, you can always do
+(drops, ctx) => {
+         drops.add(<item:minecraft:arrow> * 8);
+         return drops;
+     }
+like
+import crafttweaker.api.loot.condition.LootConditions;
+import crafttweaker.api.loot.modifier.CommonLootModifiers;
+crafttweaker.api.loot.condition.LootTableIdLootCondition;
+loot.modifiers.register(
+  "name",
+  LootConditions.only(LootTableIdLootCondition.create("minecraft:chests/simple_dungeon")),
+  (drops, ctx) => {
+         drops.add(<item:minecraft:arrow> * 8);
+         return drops;
+     }
+);

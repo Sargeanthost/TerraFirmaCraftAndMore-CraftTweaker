@@ -1,6 +1,8 @@
 #loadfirst
 import crafttweaker.api.recipe.Replacer;
+import crafttweaker.api.util.math.Random;
 
+// var myRand = new Random.nextFloat();
 public class Setup{
     public static val lumberReplacements = {
         "jungle":<item:tfc:wood/lumber/palm>,
@@ -8,6 +10,13 @@ public class Setup{
         "dark_oak":<item:tfc:wood/lumber/blackwood>,
         "warped":<item:tfc:wood/lumber/willow>
     };
+
+    // public static uniformRandomNumber(min as int, max as int) as int {
+    //     // return (Random.nextFloat() * (max - min)) + min;
+    //     return Player.getRandom().nextInt();
+    // }
+    //https://misode.github.io/loot-table/
+    //take in an ascociated array with items and their percentages, and for each add them 
 
     public static val toRemove = [<item:minecraft:stone_sword>, <item:minecraft:stone_hoe>, <item:minecraft:stone_shovel>, <item:minecraft:stone_axe>,<item:minecraft:stone_pickaxe>];
     public static val air = <item:minecraft:air>;
@@ -42,5 +51,4 @@ for brick in <tag:items:forge:stone_bricks>{
         Setup.normalStoneBricksTag.add(brick);
     } 
 }
-
 Replacer.forMods("ironchest").replace(<item:minecraft:iron_ingot>, Setup.ironVariantsTag).suppressWarnings().execute();
