@@ -51,4 +51,6 @@ dungeoncrawl:misc/dispenser_3
 dungeoncrawl:misc/dispenser_1
 dungeoncrawl:chests/forge
 
-minecraft:chests/simple_dungeon
+minecraft:chests/simple_dungeon (i think this is used by quark)
+
+champions:champion_loot

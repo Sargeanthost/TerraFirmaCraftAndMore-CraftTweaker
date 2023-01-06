@@ -6,10 +6,8 @@ adjust loot from quark dungeons
 
 use quern to grind down glowing ink sack into 12 glow stone powder
 
-edit dungeon crawl loot table. 
-<block:minecraft:dirt>.addLootModifier("iron",CommonLootModifiers.clearing(CommonLootModifiers.add(<item:minecraft:iron_ingot>)));
-https://docs.blamejared.com/1.18/en/vanilla/api/loot/modifier/BlockLootModifiers
-https://github.com/xyroc/DungeonCrawl/tree/1.18.2/src/datagen/java/xiroc/dungeoncrawl/data/loot
+edit dungeon crawl loot table. https://github.com/xyroc/DungeonCrawl/tree/1.18.2/src/datagen/java/xiroc/dungeoncrawl/data/loot
+I think the way to do this is by making a custom loot pool of things we want, clearing the loot pool from the chests, and then linking ours
 
 check if we can change mob's armour and can hold, if not disable their drops
 
