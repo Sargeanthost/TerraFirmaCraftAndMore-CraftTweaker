@@ -75,7 +75,7 @@ chest("food"), LootTable.lootTable()
 ```
 to zenscript, use the following:
 
-First, get the number of items that will be in the chest. using the context.random, pass it to a function that will return the number. this function will take a lower and upper bound. use `((random.nextFloat() * (max - min)) + min) as int;`\
+First, get the number of items that will be in the chest. using the context.random, pass it to a function that will return the number. this function will take a lower and upper bound. use `((random.nextFloat() * (max - min)) + min) as int;`
 
 Second, for each roll, pass an associated list to a function that will choose one based on the weight thats associated with them. for example:
 
@@ -94,17 +94,11 @@ loot.modifiers.register("stage_1",
         val assoArray = {
                 <item:minecraft:stone> : 1,
                 <item:minecraft:stone_sword> : 1}; // init loot table with weights
-        for i in 0..rolls { //again, check if exclusive
+        for i in 0 .. rolls {
                 list.add(Setup.getWeightedItem(random, assoArray));
         }
         return list;}
 );
-
-
-
-setRolls(UniformGenerator.between(low,high) = calling 
-setWeight() = addWithRandomChance(item % weight/total weight) =
-SetItemCountFunction.setCount(UniformGenerator.between(low,high) = 
 
 > probably by multiple chains
 or like

@@ -18,23 +18,37 @@ import crafttweaker.api.item.IItemStack;
 //to get something a certain percent amount of time, have a bounded uniform distrobution of 0 - percentage, and check if number generated was any number. 
 // anynumber/all numbers = 1/bound. for example, for something to show up 13% of the time, pick a random number between 0 and 13 (end exclusive) and youll get 1/13 for any number
 // multiple rolls is 
+// loot.modifiers.register("stage_1",
+//     LootConditions.only(LootTableIdLootCondition.create(<resource:dungeoncrawl:chests/stage_1>)),
+//     (drops, context) => {
+//         // drops.add(<item:minecraft:arrow> *8);
+//         //another day another time zenscript should have been lua. cant make lists
+//         var list = [<item:minecraft:arrow>];
+//         return list;
+//     });
+// loot.modifiers.register("food",
+//     LootConditions.only(LootTableIdLootCondition.create(<resource:dungeoncrawl:chests/food>)),
+//     (drops, context) => {
+//         // drops.add(<item:minecraft:arrow> *8);
+//         //another day another time zenscript should have been lua. cant make lists
+//         var list = [<item:minecraft:stone_sword>];
+//         return list;
+//     });
+
 loot.modifiers.register("stage_1",
     LootConditions.only(LootTableIdLootCondition.create(<resource:dungeoncrawl:chests/stage_1>)),
-    (drops, context) => {
-        // drops.add(<item:minecraft:arrow> *8);
-        //another day another time zenscript should have been lua. cant make lists
-        var list = [<item:minecraft:arrow>];
-        return list;
-    });
-loot.modifiers.register("food",
-    LootConditions.only(LootTableIdLootCondition.create(<resource:dungeoncrawl:chests/food>)),
-    (drops, context) => {
-        // drops.add(<item:minecraft:arrow> *8);
-        //another day another time zenscript should have been lua. cant make lists
-        var list = [<item:minecraft:stone_sword>];
-        return list;
-    });
-
+    (drops, context) =>{
+        var random = context.random;
+        var rolls = Setup.getRolls(random, 6, 9);
+        var list = new stdlib.List<IItemStack>(); // init empty array to size of rolls
+        var assArr = {
+                <item:minecraft:stone> : 1,
+                <item:minecraft:stone_sword> : 1}; // init loot table with weights
+        for i in 0 .. rolls { //again, check if exclusive
+                list.add(Setup.getWeightedItem(random, assArr));
+        }
+        return list;}
+);
 
 
 // println(Setup.uniformRandomNumber(1 as int,4 as int));

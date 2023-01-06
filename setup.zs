@@ -1,6 +1,7 @@
 #loadfirst
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.util.math.Random;
+import crafttweaker.api.item.IItemStack;
 
 // var myRand = new Random.nextFloat();
 public class Setup{
@@ -11,10 +12,25 @@ public class Setup{
         "warped":<item:tfc:wood/lumber/willow>
     };
 
-    // public static uniformRandomNumber(min as int, max as int) as int {
-    //     // return (Random.nextFloat() * (max - min)) + min;
-    //     return Player.getRandom().nextInt();
-    // }
+    public static getRolls(random as Random, min as int, max as int) as int{
+        var rolls = ((random.nextFloat() * (max - min)) + min) as int;
+        return rolls;
+    }
+
+//https://www.youtube.com/watch?v=MGTQWV1VfWk
+    public static getWeightedItem(random as Random, assArr as int[IItemStack])as IItemStack{
+        var sum = 0;
+        for i, weight in assArr {
+            sum += weight;
+        }
+        var rand = random.nextInt(sum);
+        for item, weight in assArr {
+            if (rand < weight) {
+                return item;
+            }
+            rand -= weight;
+        }
+    }
     //https://misode.github.io/loot-table/
     //take in an ascociated array with items and their percentages, and for each add them 
 

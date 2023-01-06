@@ -1,13 +1,13 @@
 import crafttweaker.api.resource.ResourceLocation;
 val tfcDungeonBiomes = [
-    new ResourceLocation("tfc","lake"),
-    new ResourceLocation("tfc","mountain_lake"),
-    new ResourceLocation("tfc","mountains"),
-    new ResourceLocation("tfc","old_mountain_lake"),
-    new ResourceLocation("tfc","old_mountains"),
-    new ResourceLocation("tfc","plateau_lake"),
-    new ResourceLocation("tfc","plateau"),
-    new ResourceLocation("tfc","volcanic_mountain_lake"),
-    new ResourceLocation("tfc","volcanic_mountains")
+    <resource:tfc:lake>,
+    <resource:tfc:mountains>,
+    <resource:tfc:mountain_lake>,
+    <resource:tfc:old_mountains>,
+    <resource:tfc:old_mountain_lake>,
+    <resource:tfc:plateau>,
+    <resource:tfc:plateau_lake>,
+    <resource:tfc:volcanic_mountains>,
+    <resource:tfc:volcanic_mountain_lake>
 ];
 <tag:worldgen/biome:dungeoncrawl:has_structure/dungeon>.addId(tfcDungeonBiomes);
