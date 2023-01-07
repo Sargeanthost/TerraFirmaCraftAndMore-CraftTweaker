@@ -12,24 +12,28 @@ public class Setup{
         "warped":<item:tfc:wood/lumber/willow>
     };
 
-    public static getRolls(random as Random, min as int, max as int) as int{
+    public static getRolls(random as Random, min as int, max as int) as int {
         var rolls = ((random.nextFloat() * (max - min)) + min) as int;
         return rolls;
     }
 
 //https://www.youtube.com/watch?v=MGTQWV1VfWk
-    public static getWeightedItem(random as Random, assArr as int[IItemStack])as IItemStack{
+    public static getWeightedItem(random as Random, arr as weightedIItemStack[]) as IItemStack{
         var sum = 0;
-        for i, weight in assArr {
-            sum += weight;
+        var rand = 0;
+        var item = <item:minecraft:air>;
+        for witem in arr{
+            sum += witem.weight;
         }
-        var rand = random.nextInt(sum);
-        for item, weight in assArr {
-            if (rand < weight) {
-                return item;
+        rand = random.nextInt(sum);
+        for witem in arr{
+            if (rand < witem.weight) {
+                item = witem.item;
+                break;
             }
-            rand -= weight;
+            rand -= witem.weight;
         }
+        return item;
     }
     //https://misode.github.io/loot-table/
     //take in an ascociated array with items and their percentages, and for each add them 

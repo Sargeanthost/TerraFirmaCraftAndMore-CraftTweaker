@@ -41,11 +41,12 @@ loot.modifiers.register("stage_1",
         var random = context.random;
         var rolls = Setup.getRolls(random, 6, 9);
         var list = new stdlib.List<IItemStack>(); // init empty array to size of rolls
-        var assArr = {
-                <item:minecraft:stone> : 1,
-                <item:minecraft:stone_sword> : 1}; // init loot table with weights
+        var arr = [
+                new weightedIItemStack(<item:minecraft:stone>, 3),
+                new weightedIItemStack(<item:minecraft:stone_sword>, 1)
+        ] as weightedIItemStack[]; // init loot table with weights
         for i in 0 .. rolls { //again, check if exclusive
-                list.add(Setup.getWeightedItem(random, assArr));
+                list.add(Setup.getWeightedItem(random, arr));
         }
         return list;}
 );
