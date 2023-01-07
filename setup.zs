@@ -40,8 +40,6 @@ public class Setup{
 
         return selection * amount;
     }
-    //https://misode.github.io/loot-table/
-    //take in an ascociated array with items and their percentages, and for each add them 
 
     public static val toRemove = [<item:minecraft:stone_sword>, <item:minecraft:stone_hoe>, <item:minecraft:stone_shovel>, <item:minecraft:stone_axe>,<item:minecraft:stone_pickaxe>];
     public static val air = <item:minecraft:air>;
