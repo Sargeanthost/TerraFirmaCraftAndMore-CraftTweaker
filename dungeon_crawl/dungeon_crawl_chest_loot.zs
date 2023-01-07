@@ -16,7 +16,7 @@ loot.modifiers.register("food",
     (drops, context) => {
         var random = context.random;
         var rolls = Setup.getRolls(random, 9, 11);
-        var list = new stdlib.List<IItemStack>(); // init empty array to size of rolls
+        var list = new stdlib.List<IItemStack>();
         var arr = [
                 new lootEntry(<item:tfc:food/red_apple>, 3, 1, 4),
                 new lootEntry(<item:tfc:food/rye_bread>, 2, 1, 4),
@@ -42,8 +42,8 @@ loot.modifiers.register("food",
                 new lootEntry(<item:tfc:melon>, 2, 2, 4),
                 new lootEntry(<item:tfc:food/carrot>, 2, 2, 4),
                 new lootEntry(<item:tfc:cake>, 1, 1, 1)
-        ] as lootEntry[]; // init loot table with weights
-        for i in 0 .. rolls { //again, check if exclusive
+        ] as lootEntry[];
+        for i in 0 .. rolls {
                 list.add(Setup.getWeightedItem(random, arr));
         }
         return list;

@@ -30,6 +30,7 @@ craftingTable.remove(<item:minecraft:tnt>);
 craftingTable.remove(<item:minecraft:iron_bars>);
 craftingTable.remove(<item:minecraft:bundle>);
 craftingTable.remove(<item:minecraft:fishing_rod>);
+craftingTable.remove(<item:minecraft:name_tag>);
 craftingTable.addShaped("bundle", <item:minecraft:bundle>,[[Setup.stringTag, <item:tfc:burlap_cloth>, Setup.stringTag],[<item:tfc:burlap_cloth>, Setup.air, <item:tfc:burlap_cloth>],[<item:tfc:burlap_cloth>,<item:tfc:burlap_cloth>,<item:tfc:burlap_cloth>]]);
 craftingTable.addShaped("tnt", <item:minecraft:tnt>, 
     [[<item:minecraft:gunpowder>,<tag:items:forge:sand>,<item:minecraft:gunpowder>],
@@ -42,6 +43,8 @@ craftingTable.addShaped("barrel", <item:minecraft:barrel>,
     [[<tag:items:minecraft:planks>,<tag:items:tfc:lumber>,<tag:items:minecraft:planks>],
     [<tag:items:forge:rods/copper>,Setup.air,<tag:items:forge:rods/copper>],
     [<tag:items:minecraft:planks>,<tag:items:tfc:lumber>,<tag:items:minecraft:planks>]]);
+craftingTable.addShaped("name_tag", <item:minecraft:name_tag>, 
+    [[<item:tfc:metal/rod/steel>,<item:tfc:metal/sheet/brass>,<item:tfc:metal/rod/steel>]]);
 <block:minecraft:glass>.addLootModifier("quark_shard", CommonLootModifiers.clearing(CommonLootModifiers.add(<item:quark:clear_shard> * 3)));
 
 
