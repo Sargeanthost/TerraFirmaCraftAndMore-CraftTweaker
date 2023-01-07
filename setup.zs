@@ -19,22 +19,28 @@ public class Setup{
 
 //https://www.youtube.com/watch?v=MGTQWV1VfWk
     public static getWeightedItem(random as Random, arr as lootEntry[]) as IItemStack{
+        println("line 22");
         var sum = 0;
         var amount = 1;
         var selection = <item:minecraft:air>;
-        var rand = random.nextInt(sum);
 
-        for lootEntry in arr{
-            sum += lootEntry.weight;
+        for lootentry in arr{
+            sum += lootentry.weight;
         }
-        for lootEntry in arr{
-            if (rand < lootEntry.weight) {
-                selection = lootEntry.item;
-                amount = getRolls(random, lootEntry.minCount, lootEntry.maxCount);
+        println("first loop");
+
+        var rand = random.nextInt(sum);
+        
+        for lootentry in arr{
+            if (rand < lootentry.weight) {
+                selection = lootentry.item;
+                amount = getRolls(random, lootentry.minCount, lootentry.maxCount);
                 break;
             }
-            rand -= lootEntry.weight;
+            rand -= lootentry.weight;
         }
+        println("second loop");
+
         return selection * amount;
     }
     //https://misode.github.io/loot-table/
@@ -55,7 +61,7 @@ public class Setup{
 Setup.ironVariantsTag.add(<item:tfc:metal/ingot/pig_iron>,<item:tfc:metal/ingot/cast_iron>,<item:tfc:metal/ingot/wrought_iron>,<item:minecraft:iron_ingot>);
 Setup.goldVariantsTag.add(<item:tfc:metal/ingot/rose_gold>,<item:tfc:metal/ingot/gold>,<item:minecraft:gold_ingot>);
 Setup.stringTag.add(<item:tfc:jute_fiber>);
-Setup.vinesTag.add(<item:tfc:plant/jungle_vines>,<item:tfc:plant/hanging_vines>,<item:minecraft:vine>);
+Setup.vinesTag.add(<item:tfc:plant/jungle_vines>,<item:tfc:plant/hanging_vines>,<item:minecraft:vine>, <item:tfc:plant/liana>, <item:tfc:plant/spanish_moss>);
 Setup.mossyStoneBricksTag.add(<item:minecraft:mossy_stone_bricks>);
 Setup.normalStoneBricksTag.add(<item:minecraft:stone_bricks>,<item:minecraft:chiseled_stone_bricks>);
 Setup.sandstoneTag.add(<tag:items:forge:sandstone>);

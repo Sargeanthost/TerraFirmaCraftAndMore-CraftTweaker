@@ -1,4 +1,7 @@
 ### TODO
+when opening a chest in the bed room, the game dies
+
+a chest in a weird room has default loot, triple check boiler plate on loot entries
 
 replace minecraft woods with tag that includes minecraft woods and tfc woods
 
