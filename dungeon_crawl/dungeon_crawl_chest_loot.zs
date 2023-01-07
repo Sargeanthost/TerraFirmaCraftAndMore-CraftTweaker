@@ -7,58 +7,55 @@ import crafttweaker.api.item.IItemStack;
 #onlyIf side server
 //this preprocessor doesnt work, waiting on dc response
 #endIf
-//actually stupid way to get random numbers https://discord.com/channels/136877912698650625/929770828286029914/1002701113771958352
 
+// dungeoncrawl:chests/stage_1
 
 // dungeoncrawl:chests/food
-// loot.modifiers.register("food",
-//     LootConditions.only(LootTableIdLootCondition.create(<resource:dungeoncrawl:chests/stage_1>)),
-//     CommonLootModifiers.clearing(CommonLootModifiers.addAllWithChance(<item:minecraft:honey_bottle> % 100, <item:minecraft:dried_kelp>  % 100))
-// );
-//to get something a certain percent amount of time, have a bounded uniform distrobution of 0 - percentage, and check if number generated was any number. 
-// anynumber/all numbers = 1/bound. for example, for something to show up 13% of the time, pick a random number between 0 and 13 (end exclusive) and youll get 1/13 for any number
-// multiple rolls is 
-// loot.modifiers.register("stage_1",
-//     LootConditions.only(LootTableIdLootCondition.create(<resource:dungeoncrawl:chests/stage_1>)),
-//     (drops, context) => {
-//         // drops.add(<item:minecraft:arrow> *8);
-//         //another day another time zenscript should have been lua. cant make lists
-//         var list = [<item:minecraft:arrow>];
-//         return list;
-//     });
-// loot.modifiers.register("food",
-//     LootConditions.only(LootTableIdLootCondition.create(<resource:dungeoncrawl:chests/food>)),
-//     (drops, context) => {
-//         // drops.add(<item:minecraft:arrow> *8);
-//         //another day another time zenscript should have been lua. cant make lists
-//         var list = [<item:minecraft:stone_sword>];
-//         return list;
-//     });
-
-loot.modifiers.register("stage_1",
-    LootConditions.only(LootTableIdLootCondition.create(<resource:dungeoncrawl:chests/stage_1>)),
-    (drops, context) =>{
+loot.modifiers.register("food",
+    LootConditions.only(LootTableIdLootCondition.create(<resource:dungeoncrawl:chests/food>)),
+    (drops, context) => {
         var random = context.random;
-        var rolls = Setup.getRolls(random, 6, 9);
+        var rolls = Setup.getRolls(random, 9, 11);
         var list = new stdlib.List<IItemStack>(); // init empty array to size of rolls
         var arr = [
-                new weightedIItemStack(<item:minecraft:stone>, 3),
-                new weightedIItemStack(<item:minecraft:stone_sword>, 1)
-        ] as weightedIItemStack[]; // init loot table with weights
+                new lootEntry(<item:tfc:food/red_apple>, 3, 1, 4),
+                new lootEntry(<item:tfc:food/rye_bread>, 2, 1, 4),
+                new lootEntry(<item:tfc:food/wheat_bread>, 2, 1, 4),
+                new lootEntry(<item:tfc:food/maize_bread>, 2, 1, 4),
+                new lootEntry(<item:firmalife:food/garlic_bread>, 2, 1, 2),
+                new lootEntry(<item:firmalife:food/rice_flatbread>, 2, 1, 3),
+                new lootEntry(<item:firmalife:food/rice_flatbread>, 2, 1, 3),
+                new lootEntry(<item:firmalife:food/maize_flatbread>, 2, 1, 3),
+                new lootEntry(<item:tfc:food/chicken>, 1, 1, 3),
+                new lootEntry(<item:tfc:food/pork>, 1, 1, 3),
+                new lootEntry(<item:tfc:food/quail>, 1, 1, 3),
+                new lootEntry(<item:tfc:food/mutton>, 1, 1, 3),
+                new lootEntry(<item:tfc:food/duck>, 1, 1, 3),
+                new lootEntry(<item:tfc:food/horse_meat>, 1, 1, 3),
+                new lootEntry(<item:tfc:food/cooked_gran_feline>, 1, 1, 3),
+                new lootEntry(<item:tfc:food/chevon>, 1, 1, 3),
+                new lootEntry(<item:tfc:food/camelidae>, 1, 1, 3),
+                new lootEntry(<item:tfc:food/venison>, 1, 1, 3),
+                new lootEntry(<item:tfc:food/cooked_cod>, 1, 1, 3),
+                new lootEntry(<item:tfc:food/strawberry>, 4, 2, 4),
+                new lootEntry(<item:firmalife:food/pie_dough>, 2, 1, 3),
+                new lootEntry(<item:tfc:melon>, 2, 2, 4),
+                new lootEntry(<item:tfc:food/carrot>, 2, 2, 4),
+                new lootEntry(<item:tfc:cake>, 1, 1, 1)
+        ] as lootEntry[]; // init loot table with weights
         for i in 0 .. rolls { //again, check if exclusive
                 list.add(Setup.getWeightedItem(random, arr));
         }
-        return list;}
+        return list;
+    }
 );
 
 
-// println(Setup.uniformRandomNumber(1 as int,4 as int));
 // dungeoncrawl:chests/library
 // dungeoncrawl:chests/stage_3
 // dungeoncrawl:chests/stage_4
 // dungeoncrawl:chests/stage_5
 // dungeoncrawl:chests/stage_2
-// dungeoncrawl:chests/stage_1
 // dungeoncrawl:chests/treasure
 // dungeoncrawl:monster_overrides/wither_skeleton
 // dungeoncrawl:chests/secret_room
