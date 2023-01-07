@@ -19,23 +19,23 @@ public class Setup{
 
 //https://www.youtube.com/watch?v=MGTQWV1VfWk
     public static getWeightedItem(random as Random, arr as lootEntry[]) as IItemStack{
+        var amount = 0;
+        var rand = 0;
         var sum = 0;
-        var amount = 1;
-        var selection = <item:minecraft:air>;
-        var rand = random.nextInt(sum);
-
-        for lootEntry in arr{
-            sum += lootEntry.weight;
+        var item = <item:minecraft:air>;
+        for loote in arr{
+            sum += loote.weight;
         }
-        for lootEntry in arr{
-            if (rand < lootEntry.weight) {
-                selection = lootEntry.item;
-                amount = getRolls(random, lootEntry.minCount, lootEntry.maxCount);
+        rand = random.nextInt(sum);
+        for loote in arr{
+            if (rand < loote.weight) {
+                amount = getRolls(random, loote.min, loote.max);
+                item = loote.item;
                 break;
             }
-            rand -= lootEntry.weight;
+            rand -= loote.weight;
         }
-        return selection * amount;
+        return item * amount;
     }
     //https://misode.github.io/loot-table/
     //take in an ascociated array with items and their percentages, and for each add them 
