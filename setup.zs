@@ -19,7 +19,6 @@ public class Setup{
 
 //https://www.youtube.com/watch?v=MGTQWV1VfWk
     public static getWeightedItem(random as Random, arr as lootEntry[]) as IItemStack{
-        println("line 22");
         var sum = 0;
         var amount = 1;
         var selection = <item:minecraft:air>;
@@ -27,7 +26,6 @@ public class Setup{
         for lootentry in arr{
             sum += lootentry.weight;
         }
-        println("first loop");
 
         var rand = random.nextInt(sum);
         
@@ -39,7 +37,6 @@ public class Setup{
             }
             rand -= lootentry.weight;
         }
-        println("second loop");
 
         return selection * amount;
     }
