@@ -163,7 +163,7 @@ loot.modifiers.register("stage_4",
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
         var arr = [
-                new lootEntry(<item:tfc:food/red_apple>, 3, 1, 4)
+                new lootEntry(<item:tfc:food/green_apple>, 3, 1, 4)
         ] as lootEntry[];
 
         for i in 0 .. Setup.getRolls(random, 7, 10) {
@@ -178,7 +178,7 @@ loot.modifiers.register("stage_5",
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
         var arr = [
-                new lootEntry(<item:tfc:food/red_apple>, 3, 1, 4)
+                new lootEntry(<item:tfc:food/peach>, 3, 1, 4)
         ] as lootEntry[];
 
         for i in 0 .. Setup.getRolls(random, 6, 9) {
@@ -194,7 +194,7 @@ loot.modifiers.register("supply",
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
         var arr = [
-                new lootEntry(<item:tfc:food/red_apple>, 3, 1, 4)
+                new lootEntry(<item:tfc:food/sugarcane>, 3, 1, 4)
         ] as lootEntry[];
 
         for i in 0 .. Setup.getRolls(random, 3, 6) {
@@ -209,7 +209,7 @@ loot.modifiers.register("forge",
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
         var arr = [
-                new lootEntry(<item:tfc:food/red_apple>, 3, 1, 4)
+                new lootEntry(<item:tfc:food/fruit_soup>, 3, 1, 4)
         ] as lootEntry[];
 
         for i in 0 .. Setup.getRolls(random, 9, 11) {
@@ -224,7 +224,7 @@ loot.modifiers.register("treasure",
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
         var arr = [
-                new lootEntry(<item:tfc:food/red_apple>, 3, 1, 4)
+                new lootEntry(<item:tfc:food/tomato>, 3, 1, 4)
         ] as lootEntry[];
 
         for i in 0 .. Setup.getRolls(random, 7, 8) {
@@ -239,7 +239,7 @@ loot.modifiers.register("secret_room",
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
         var arr = [
-                new lootEntry(<item:tfc:food/red_apple>, 3, 1, 4)
+                new lootEntry(<item:tfc:food/soybean>, 3, 1, 4)
         ] as lootEntry[];
 
         for i in 0 .. 8 {
@@ -252,10 +252,9 @@ loot.modifiers.register("library",
     LootConditions.only(LootTableIdLootCondition.create(<resource:dungeoncrawl:chests/library>)),
     (drops, context) => {
         var random = context.random;
-        // var rolls = Setup.getRolls(random, 9, 11);
         var list = new stdlib.List<IItemStack>();
         var arr = [
-                new lootEntry(<item:tfc:food/red_apple>, 3, 1, 4)
+                new lootEntry(<item:tfc:food/lemon>, 3, 1, 4)
         ] as lootEntry[];
 
         for i in 0 .. Setup.getRolls(random, 9, 11) {
@@ -275,7 +274,7 @@ loot.modifiers.register("food",
                 new lootEntry(<item:tfc:food/wheat_bread>, 2, 1, 4),
                 new lootEntry(<item:tfc:food/maize_bread>, 2, 1, 4),
                 new lootEntry(<item:firmalife:food/garlic_bread>, 2, 1, 2),
-                new lootEntry(<item:firmalife:food/rice_flatbread>, 2, 1, 3),
+                new lootEntry(<item:firmalife:food/wheat_flatbread>, 2, 1, 3),
                 new lootEntry(<item:firmalife:food/rice_flatbread>, 2, 1, 3),
                 new lootEntry(<item:firmalife:food/maize_flatbread>, 2, 1, 3),
                 new lootEntry(<item:tfc:food/chicken>, 1, 1, 3),
@@ -312,16 +311,55 @@ loot.modifiers.register("food",
     }
 );
 
-// dungeoncrawl:chests/library
-// dungeoncrawl:chests/stage_3
-// dungeoncrawl:chests/stage_4
-// dungeoncrawl:chests/stage_5
-// dungeoncrawl:chests/stage_2
-// dungeoncrawl:chests/treasure
-// dungeoncrawl:monster_overrides/wither_skeleton
-// dungeoncrawl:chests/secret_room
-// dungeoncrawl:chests/supply
+loot.modifiers.register("rare_stage_1",
+    LootConditions.only(LootTableIdLootCondition.create(<resource:minecraft:chests/jungle_temple>)),
+    (drops, context) => {
+        var random = context.random;
+        var list = new stdlib.List<IItemStack>();
+        var arr = [
+                new lootEntry(<item:minecraft:jungle_sapling>, 3, 1, 4)
+        ] as lootEntry[];
+
+        for i in 0 .. Setup.getRolls(random, 9, 11) {
+                list.add(Setup.getWeightedItem(random, arr));
+        }
+        return list;
+    }
+);
+
+loot.modifiers.register("rare_stage_2and3",
+    LootConditions.only(LootTableIdLootCondition.create(<resource:minecraft:chests/simple_dungeon>)),
+    (drops, context) => {
+        var random = context.random;
+        var list = new stdlib.List<IItemStack>();
+        var arr = [
+                new lootEntry(<item:tfc:metal/chain/steel>, 3, 1, 4)
+        ] as lootEntry[];
+
+        for i in 0 .. Setup.getRolls(random, 9, 11) {
+                list.add(Setup.getWeightedItem(random, arr));
+        }
+        return list;
+    }
+);
+
+loot.modifiers.register("rare_stage_4and5",
+    LootConditions.only(LootTableIdLootCondition.create(<resource:minecraft:chests/stronghold_crossing>)),
+    (drops, context) => {
+        var random = context.random;
+        var list = new stdlib.List<IItemStack>();
+        var arr = [
+                new lootEntry(<item:minecraft:ender_eye>, 3, 1, 4)
+        ] as lootEntry[];
+
+        for i in 0 .. Setup.getRolls(random, 9, 11) {
+                list.add(Setup.getWeightedItem(random, arr));
+        }
+        return list;
+    }
+);
+
+// dungeoncrawl:misc/dispenser_1
 // dungeoncrawl:misc/dispenser_2
 // dungeoncrawl:misc/dispenser_3
-// dungeoncrawl:misc/dispenser_1
-// dungeoncrawl:chests/forge
+// dungeoncrawl:monster_overrides/wither_skeleton

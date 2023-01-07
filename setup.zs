@@ -32,7 +32,7 @@ public class Setup{
         for lootentry in arr{
             if (rand < lootentry.weight) {
                 selection = lootentry.item;
-                amount = getRolls(random, lootentry.minCount, lootentry.maxCount);
+                amount = getRolls(random, lootentry.min, lootentry.max);
                 break;
             }
             rand -= lootentry.weight;
