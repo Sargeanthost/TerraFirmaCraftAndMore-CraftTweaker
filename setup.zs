@@ -13,12 +13,14 @@ public class Setup{
     };
 
     public static getRolls(random as Random, min as int, max as int) as int {
+        println("getrolls");
         var rolls = ((random.nextFloat() * (max - min)) + min) as int;
         return rolls;
     }
 
 //https://www.youtube.com/watch?v=MGTQWV1VfWk
     public static getWeightedItem(random as Random, arr as lootEntry[]) as IItemStack{
+        println("getweighted");
         var sum = 0;
         var amount = 1;
         var selection = <item:minecraft:air>;
@@ -32,12 +34,11 @@ public class Setup{
         for lootentry in arr{
             if (rand < lootentry.weight) {
                 selection = lootentry.item;
-                amount = getRolls(random, lootentry.minCount, lootentry.maxCount);
+                amount = getRolls(random, lootentry.min, lootentry.max);
                 break;
             }
             rand -= lootentry.weight;
         }
-
         return selection * amount;
     }
 
