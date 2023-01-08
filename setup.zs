@@ -18,17 +18,10 @@ public class Setup{
     }
 
 //https://www.youtube.com/watch?v=MGTQWV1VfWk
-    public static getWeightedItem(random as Random, arr as lootEntry[]) as IItemStack{
-        var sum = 0;
+    public static getWeightedItem(random as Random, arr as lootEntry[], weights as int) as IItemStack{
         var amount = 1;
         var selection = <item:minecraft:air>;
-
-        for lootentry in arr{
-            sum += lootentry.weight;
-        }
-
-        var rand = random.nextInt(sum);
-        
+        var rand = random.nextInt(weights);
         for lootentry in arr{
             if (rand < lootentry.weight) {
                 selection = lootentry.item;
@@ -37,7 +30,6 @@ public class Setup{
             }
             rand -= lootentry.weight;
         }
-
         return selection * amount;
     }
 
