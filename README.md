@@ -1,4 +1,13 @@
 ### TODO
+
+# break statement is broken, you can only use 1 loop per function
+
+change minecraft armour to give 0 protection. 
+
+get rid of mc anvil recipies, except for runes
+
+make mc crops drop nothing when broken
+
 when opening a chest in the bed room, the game dies
 
 weird hidey hole chest doesnt have a loot table?
@@ -13,6 +22,8 @@ use quern to grind down glowing ink sack into 12 glow stone powder
 
 edit dungeon crawl loot table. https://github.com/xyroc/DungeonCrawl/tree/1.18.2/src/datagen/java/xiroc/dungeoncrawl/data/loot
 
+edit enhanced dungeons loot table. https://github.com/BarionLP/DungeonsEnhanced/tree/1.18.2/src/generated/resources/data/dungeons_enhanced/loot_tables/chests 
+
 check if we can change mob's armour and can hold, if not, disable their drops
 
 change where frogs spawn? add nutrition and expiration date
@@ -23,7 +34,7 @@ make chains meltable
 
 check firmalife recipes
 
-edit terrafirma book with gemstone rarity (4%) and locations (below)
+edit terrafirma book with gemstone rarity (4%) and locations (below) -> updated in recent commit
 
 ## Notes
 have undesirable items drop desireable items
