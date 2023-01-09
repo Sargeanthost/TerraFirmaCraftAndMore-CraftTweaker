@@ -1,6 +1,5 @@
 #loadfirst
 import crafttweaker.api.recipe.Replacer;
-import crafttweaker.api.util.math.Random;
 import crafttweaker.api.item.IItemStack;
 
 // var myRand = new Random.nextFloat();
@@ -11,27 +10,6 @@ public class Setup{
         "dark_oak":<item:tfc:wood/lumber/blackwood>,
         "warped":<item:tfc:wood/lumber/willow>
     };
-
-    public static getRolls(random as Random, min as int, max as int) as int {
-        var rolls = ((random.nextFloat() * (max - min)) + min) as int;
-        return rolls;
-    }
-
-//https://www.youtube.com/watch?v=MGTQWV1VfWk
-    public static getWeightedItem(random as Random, arr as lootEntry[], weights as int) as IItemStack{
-        var amount = 1;
-        var selection = <item:minecraft:air>;
-        var rand = random.nextInt(weights);
-        for lootentry in arr{
-            if (rand < lootentry.weight) {
-                selection = lootentry.item;
-                amount = getRolls(random, lootentry.min, lootentry.max);
-                break;
-            }
-            rand -= lootentry.weight;
-        }
-        return selection * amount;
-    }
 
     public static val toRemove = [<item:minecraft:stone_sword>, <item:minecraft:stone_hoe>, <item:minecraft:stone_shovel>, <item:minecraft:stone_axe>,<item:minecraft:stone_pickaxe>];
     public static val air = <item:minecraft:air>;

@@ -5,7 +5,7 @@ import crafttweaker.api.util.random.Percentaged;
 import crafttweaker.api.util.math.Random;
 import crafttweaker.api.item.IItemStack;
 
-var stg1 = [
+val stg1 = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3),
     new lootEntry(<item:tfc:food/banana>, 1, 1, 7),
     new lootEntry(<item:tfc:food/potato>, 2, 1, 5),
@@ -47,7 +47,7 @@ var stg1 = [
     new lootEntry(<item:tfc:seeds/wheat>, 3, 1, 5)
 ] as lootEntry[];
 
-var stg2 = [
+val stg2 = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 2),
     new lootEntry(<item:tfc:food/banana>, 1, 1, 7),
     new lootEntry(<item:tfc:food/cheese>, 1, 1, 1),
@@ -90,39 +90,39 @@ var stg2 = [
     new lootEntry(<item:tfc:seeds/soybean>, 2, 2, 4)
 ] as lootEntry[];
 
-var stg3 = [
+val stg3 = [
     new lootEntry(<item:tfc:food/red_apple>, 3, 1, 4)
 ] as lootEntry[];
 
-var stg4 = [
+val stg4 = [
     new lootEntry(<item:tfc:food/green_apple>, 3, 1, 4)
 ] as lootEntry[];
 
-var stg5 = [
+val stg5 = [
     new lootEntry(<item:tfc:food/peach>, 3, 1, 4)
 ] as lootEntry[];
 
-var supply = [
+val supply = [
     new lootEntry(<item:tfc:food/sugarcane>, 3, 1, 4)
 ] as lootEntry[];
 
-var forge = [
+val forge = [
     new lootEntry(<item:tfc:food/fruit_soup>, 3, 1, 4)
 ] as lootEntry[];
 
-var treasure = [
+val treasure = [
     new lootEntry(<item:tfc:food/tomato>, 3, 1, 4)
 ] as lootEntry[];
 
-var secret = [
+val secret = [
     new lootEntry(<item:tfc:food/soybean>, 3, 1, 4)
 ] as lootEntry[];
 
-var library = [
+val library = [
     new lootEntry(<item:tfc:food/lemon>, 3, 1, 4)
 ] as lootEntry[];
 
-var food = [
+val food = [
     new lootEntry(<item:tfc:food/red_apple>, 3, 1, 4),
     new lootEntry(<item:tfc:food/rye_bread>, 2, 1, 4),
     new lootEntry(<item:tfc:food/wheat_bread>, 2, 1, 4),
@@ -158,15 +158,15 @@ var food = [
     new lootEntry(<item:tfc:cake>, 1, 1, 1)
 ] as lootEntry[];
 
-var stg1r = [
+val stg1r = [
     new lootEntry(<item:minecraft:jungle_sapling>, 3, 1, 4)
 ] as lootEntry[];
 
-var stg2and3r = [
+val stg2and3r = [
     new lootEntry(<item:tfc:metal/chain/steel>, 3, 1, 4)
 ] as lootEntry[];
 
-var stg4and5r = [
+val stg4and5r = [
     new lootEntry(<item:minecraft:ender_eye>, 3, 1, 4)
 ] as lootEntry[];
 
@@ -245,8 +245,8 @@ loot.modifiers.register("stage_1",
     (drops, context) =>{
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. Setup.getRolls(random, 6, 9) {
-            list.add(Setup.getWeightedItem(random, stg1, stg1totw));
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, stg1, stg1totw));
         }
         return list;
     }
@@ -257,8 +257,8 @@ loot.modifiers.register("stage_2",
     (drops, context) =>{
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. Setup.getRolls(random, 6, 9) {
-            list.add(Setup.getWeightedItem(random, stg2, stg2totw));
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, stg2, stg2totw));
         }
         return list;
     }
@@ -269,8 +269,8 @@ loot.modifiers.register("stage_3",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. Setup.getRolls(random, 6, 9) {
-            list.add(Setup.getWeightedItem(random, stg3, stg3totw));
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, stg3, stg3totw));
         }
         return list;
     }
@@ -281,8 +281,8 @@ loot.modifiers.register("stage_4",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. Setup.getRolls(random, 6, 9) {
-            list.add(Setup.getWeightedItem(random, stg4, stg4totw));
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, stg4, stg4totw));
         }
         return list;
     }
@@ -293,8 +293,8 @@ loot.modifiers.register("stage_5",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. Setup.getRolls(random, 6, 9) {
-            list.add(Setup.getWeightedItem(random, stg5, stg5totw));
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, stg5, stg5totw));
         }
         return list;
     }
@@ -305,8 +305,8 @@ loot.modifiers.register("supply",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. Setup.getRolls(random, 6, 9) {
-            list.add(Setup.getWeightedItem(random, supply, supplytotw));
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, supply, supplytotw));
         }
         return list;
     }
@@ -317,8 +317,8 @@ loot.modifiers.register("forge",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. Setup.getRolls(random, 6, 9) {
-            list.add(Setup.getWeightedItem(random, forge, forgetotw));
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, forge, forgetotw));
         }
         return list;
     }
@@ -329,8 +329,8 @@ loot.modifiers.register("treasure",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. Setup.getRolls(random, 6, 9) {
-            list.add(Setup.getWeightedItem(random, treasure, treasuretotw));
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, treasure, treasuretotw));
         }
         return list;
     }
@@ -341,20 +341,20 @@ loot.modifiers.register("secret_room",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. Setup.getRolls(random, 6, 9) {
-            list.add(Setup.getWeightedItem(random, secret, secrettotw));
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, secret, secrettotw));
         }
         return list;
     }
 );
 
-loot.modifiers.register("library",
+loot.modifiers.register("dc_library",
     LootConditions.only(LootTableIdLootCondition.create(<resource:dungeoncrawl:chests/library>)),
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. Setup.getRolls(random, 6, 9) {
-            list.add(Setup.getWeightedItem(random, library, librarytotw));
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, library, librarytotw));
         }
         return list;
     }
@@ -365,8 +365,8 @@ loot.modifiers.register("food",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. Setup.getRolls(random, 6, 9) {
-            list.add(Setup.getWeightedItem(random, food, foodtotw));
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, food, foodtotw));
         }
         return list;
     }
@@ -377,8 +377,8 @@ loot.modifiers.register("stage_1rare",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. Setup.getRolls(random, 6, 9) {
-            list.add(Setup.getWeightedItem(random, stg1r, stg1rtotw));
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, stg1r, stg1rtotw));
         }
         return list;
     }
@@ -389,8 +389,8 @@ loot.modifiers.register("stage_2and3rare",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. Setup.getRolls(random, 6, 9) {
-            list.add(Setup.getWeightedItem(random, stg2and3r, stg2and3rtotw));
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, stg2and3r, stg2and3rtotw));
         }
         return list;
     }
@@ -401,14 +401,9 @@ loot.modifiers.register("stage_4and5rare",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. Setup.getRolls(random, 6, 9) {
-            list.add(Setup.getWeightedItem(random, stg4and5r, stg4and5rtotw));
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, stg4and5r, stg4and5rtotw));
         }
         return list;
     }
 );
-
-// dungeoncrawl:misc/dispenser_1
-// dungeoncrawl:misc/dispenser_2
-// dungeoncrawl:misc/dispenser_3
-// dungeoncrawl:monster_overrides/wither_skeleton
