@@ -41,7 +41,7 @@ have undesirable items drop desireable items
 
 grindstone is getting removed, but dungeon loot will be allowed to have enchantments. enchantments will be sort of a "lost art". 
 
-only runes will be allowed to be found. no enchanted books (you can read them which doesnt follow the lore)
+runes only apply the shimmer they have
 
 gemstones can be found in:
 * cut emerald : diorite

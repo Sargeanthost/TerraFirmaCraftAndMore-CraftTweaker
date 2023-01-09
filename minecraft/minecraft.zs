@@ -46,5 +46,11 @@ craftingTable.addShaped("barrel", <item:minecraft:barrel>,
 craftingTable.addShaped("name_tag", <item:minecraft:name_tag>, 
     [[<item:tfc:metal/rod/steel>,<item:tfc:metal/sheet/brass>,<item:tfc:metal/rod/steel>]]);
 <block:minecraft:glass>.addLootModifier("quark_shard", CommonLootModifiers.clearing(CommonLootModifiers.add(<item:quark:clear_shard> * 3)));
-
-
+val removeDamage = [<item:minecraft:wooden_shovel>,<item:minecraft:wooden_pickaxe>,<item:minecraft:wooden_axe>,<item:minecraft:wooden_hoe>,<item:minecraft:stone_shovel>,
+    <item:minecraft:stone_pickaxe>,<item:minecraft:stone_axe>,<item:minecraft:stone_hoe>,<item:minecraft:iron_shovel>,<item:minecraft:iron_pickaxe>,
+    <item:minecraft:iron_axe>,<item:minecraft:iron_hoe>,<item:minecraft:golden_shovel>,<item:minecraft:golden_pickaxe>,<item:minecraft:golden_axe>,<item:minecraft:golden_hoe>,
+    <item:minecraft:diamond_shovel>,<item:minecraft:diamond_pickaxe>,<item:minecraft:diamond_axe>,<item:minecraft:diamond_hoe>,<item:minecraft:netherite_shovel>,
+    <item:minecraft:netherite_pickaxe>,<item:minecraft:netherite_axe>,<item:minecraft:netherite_hoe>];
+for item in removeDamage {
+    //attribute modifiers, have to find uuid for damage
+}
