@@ -11,8 +11,6 @@ public class Setup{
         "warped":<item:tfc:wood/lumber/willow>
     };
 
-    
-
     public static val toRemove = [<item:minecraft:stone_sword>, <item:minecraft:stone_hoe>, <item:minecraft:stone_shovel>, <item:minecraft:stone_axe>,<item:minecraft:stone_pickaxe>];
     public static val air = <item:minecraft:air>;
 

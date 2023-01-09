@@ -407,8 +407,3 @@ loot.modifiers.register("stage_4and5rare",
         return list;
     }
 );
-
-// dungeoncrawl:misc/dispenser_1
-// dungeoncrawl:misc/dispenser_2
-// dungeoncrawl:misc/dispenser_3
-// dungeoncrawl:monster_overrides/wither_skeleton
