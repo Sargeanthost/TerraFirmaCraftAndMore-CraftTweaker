@@ -20,12 +20,10 @@ public class lootEntry {
         return rolls;
     }
 
-    public static getWeightedItem(random as Random, arr as lootEntry[], sum as int) as IItemStack{
+    public static getWeightedItem(random as Random, arr as lootEntry[], weightstot as int) as IItemStack{
         var amount = 1;
         var selection = <item:minecraft:air>;
-
-        var rand = random.nextInt(sum);
-        
+        var rand = random.nextInt(weightstot);
         for lootentry in arr{
             if (rand < lootentry.weight) {
                 selection = lootentry.item;

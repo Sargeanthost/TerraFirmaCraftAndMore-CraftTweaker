@@ -2,7 +2,6 @@
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.item.IItemStack;
 
-// var myRand = new Random.nextFloat();
 public class Setup{
     public static val lumberReplacements = {
         "jungle":<item:tfc:wood/lumber/palm>,
@@ -20,7 +19,7 @@ public class Setup{
     public static val vinesTag = <tag:items:crafttweaker:vines>;
     public static val normalStoneBricksTag = <tag:items:crafttweaker:stone_bricks/normal>;
     public static val mossyStoneBricksTag = <tag:items:tfc:mossy_stone_bricks>;
-    public static val sandstoneTag = <tag:items:crafttweaker:sandstone>;//all sandstone types, so making new tag instead of adding to forge
+    public static val sandstoneTag = <tag:items:crafttweaker:sandstone>;
 
 }
 Setup.ironVariantsTag.add(<item:tfc:metal/ingot/pig_iron>,<item:tfc:metal/ingot/cast_iron>,<item:tfc:metal/ingot/wrought_iron>,<item:minecraft:iron_ingot>);
