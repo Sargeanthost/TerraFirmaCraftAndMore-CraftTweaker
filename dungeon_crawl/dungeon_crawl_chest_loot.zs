@@ -269,7 +269,12 @@ val forge = [
 ] as lootEntry[];
 
 val treasure = [
-    new lootEntry(<item:quark:blank_rune>, 1, 1, 1),
+    new lootEntry(<item:minecraft:coal>, 5, 4, 9),
+    new lootEntry(<item:tfc:dead_torch>, 4, 1, 5),
+    new lootEntry(<item:minecraft:bone>, 4, 2, 3),
+    new lootEntry(<item:minecraft:cobweb>, 4, 1, 2),
+    new lootEntry(<item:quark:blank_rune>, 3, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/unknown>, 3, 1, 5),
     new lootEntry(<item:tfc:metal/ingot/zinc>, 1, 2, 3),
     new lootEntry(<item:tfc:metal/ingot/nickel>, 1, 2, 3),
     new lootEntry(<item:tfc:metal/ingot/tin>, 1, 2, 3),
