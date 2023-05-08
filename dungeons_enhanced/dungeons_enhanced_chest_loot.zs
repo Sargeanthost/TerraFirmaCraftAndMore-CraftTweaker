@@ -22,9 +22,9 @@ val quarters = [
     new lootEntry(<item:minecraft:stick>, 5, 2, 5)
 ];
 val coffin = [
-    new lootEntry(<item:minercaft:bone>, 2, 1, 3),
-    new lootEntry(<item:minercaft:stick>, 2, 1, 3),
-    new lootEntery(<item:minecraft:skeleton_skull>, 1, 1, 1)
+    new lootEntry(<item:minecraft:bone>, 2, 1, 3),
+    new lootEntry(<item:minecraft:stick>, 2, 1, 3),
+    new lootEntry(<item:minecraft:skeleton_skull>, 1, 1, 1)
 ];
 val cellar = [
     new lootEntry(<item:firmalife:food/nightshade_berry>, 5, 1, 3),
@@ -39,12 +39,10 @@ val cellar = [
     new lootEntry(<item:firmalife:food/chevre>, 2, 1, 3),
     new lootEntry(<item:firmalife:food/cheddar>, 2, 1, 3),
     new lootEntry(<item:firmalife:food/cocoa_beans>, 2, 1, 3),
-    new lootEntry(<item:firmalife:food/pumpkin_chunks_jar>, 2, 1, 1),
-    new lootEntry(<item:firmalife:food/pineapple_jar>, 2, 1, 1),
-    new lootEntry(<item:firmalife:food/banana_jar>, 2, 1, 1),
-    new lootEntry(<item:firmalife:food/orange_jar>, 2, 1, 1),
-    new lootEntry(<item:firmalife:food/orange_jar>, 2, 1, 1),
-    new lootEntry(<item:firmalife:food/peach_jar>, 2, 1, 1),
+    new lootEntry(<item:firmalife:pumpkin_chunks_jar>, 2, 1, 1), 
+    new lootEntry(<item:firmalife:banana_jar>, 2, 1, 1),
+    new lootEntry(<item:firmalife:orange_jar>, 2, 1, 1),
+    new lootEntry(<item:firmalife:peach_jar>, 2, 1, 1),
 ];
 //sheilds and stone and maybe some medium grade tools
 val armory = [
@@ -54,10 +52,10 @@ val spring = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
 ];
 val library = [
-    new lootEntry(<item:tfc:papyrus_strip>, 2, 1, 3)
-    new lootEntry(<item:tfc:unrefined_paper>, 2, 1, 3)
-    new lootEntry(<item:minecraft:paper>, 2, 1, 3)
-    new lootEntry(<item:minecraft:book>, 2, 1, 3)
+    new lootEntry(<item:tfc:papyrus_strip>, 2, 1, 3),
+    new lootEntry(<item:tfc:unrefined_paper>, 2, 1, 3),
+    new lootEntry(<item:minecraft:paper>, 2, 1, 3),
+    new lootEntry(<item:minecraft:book>, 2, 1, 3),
     new lootEntry(<item:minecraft:leather>, 2, 1, 3)
 ];
 val throne = [
