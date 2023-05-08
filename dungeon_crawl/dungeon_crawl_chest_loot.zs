@@ -269,7 +269,38 @@ val forge = [
 ] as lootEntry[];
 
 val treasure = [
-    new lootEntry(<item:firmalife:metal/ingot/chromium>, 1, 1, 3)
+    new lootEntry(<item:quark:blank_rune>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/zinc>, 1, 2, 3),
+    new lootEntry(<item:tfc:metal/ingot/nickel>, 1, 2, 3),
+    new lootEntry(<item:tfc:metal/ingot/tin>, 1, 2, 3),
+    new lootEntry(<item:tfc:metal/ingot/bismuth>, 1, 2, 3),
+    new lootEntry(<item:tfc:metal/ingot/copper>, 1, 2, 3),
+    new lootEntry(<item:tfc:metal/ingot/wrought_iron>, 1, 1, 3),
+    new lootEntry(<item:tfc:metal/ingot/cast_iron>, 1, 1, 3),
+    new lootEntry(<item:tfc:metal/ingot/silver>, 1, 1, 3),
+    new lootEntry(<item:tfc:metal/ingot/sterling_silver>, 1, 1, 3),
+    new lootEntry(<item:tfc:metal/ingot/gold>, 1, 1, 3),
+    new lootEntry(<item:tfc:metal/ingot/rose_gold>, 1, 1, 3),
+    new lootEntry(<item:firmalife:metal/ingot/chromium>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/aluminum>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/antimony>, 1, 2, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/beryllium>, 1, 2, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/beryllium_copper>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/boron>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/cobalt>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/ferroboron>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/florentine_bronze>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/iridium>, 1, 2, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/lead>, 1, 2, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/mithril>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/nickel_silver>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/osmiridium>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/osmium>, 1, 2, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/pewter>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/thorium>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/titanium>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/tungsten>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/uranium>, 1, 1, 3)
 ] as lootEntry[];
 
 val secret = [
