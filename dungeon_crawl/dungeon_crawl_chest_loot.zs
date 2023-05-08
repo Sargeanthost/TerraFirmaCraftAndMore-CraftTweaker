@@ -237,9 +237,31 @@ val stg5 = [
 ] as lootEntry[];
 
 val supply = [
-    new lootEntry(<item:tfc:stone/axe/sedimentary>, 2, 1, 3),
-    new lootEntry(<item:tfc:metal/shield/bismuth_bronze>, 1, 1, 1),
-    new lootEntry(<item:tfc:metal/shield/black_bronze>, 1, 1, 1)
+    new lootEntry(<item:minecraft:stick>, 5, 1, 2),
+    new lootEntry(<item:tfc:stone/javelin_head/sedimentary>, 4, 1, 4),
+    new lootEntry(<item:tfc:stone/axe/sedimentary>, 3, 1, 3),
+    new lootEntry(<item:tfc:metal/javelin_head/bronze>, 2, 1, 2),
+    new lootEntry(<item:tfc:metal/javelin_head/copper>, 2, 1, 2),
+    new lootEntry(<item:tfc:food/rye_bread>, 2, 1, 2),
+    new lootEntry(<item:tfc:food/wheat_bread>, 2, 1, 2),
+    new lootEntry(<item:tfc:food/maize_bread>, 2, 1, 2),
+    new lootEntry(<item:firmalife:food/wheat_flatbread>, 2, 1, 2),
+    new lootEntry(<item:firmalife:food/rice_flatbread>, 2, 1, 2),
+    new lootEntry(<item:firmalife:food/maize_flatbread>, 2, 1, 2),
+    new lootEntry(<item:minecraft:feather>, 2, 1, 3),
+    new lootEntry(<item:minecraft:flint>, 2, 1, 3),
+    new lootEntry(<item:tfc:jute_fiber>, 2, 2, 4),
+    new lootEntry(<item:tfc:wool_yarn>, 2, 2, 4),
+    new lootEntry(<item:minecraft:leather_helmet>, 1, 1, 1),
+    new lootEntry(<item:minecraft:leather_chestplate>, 1, 1, 1),
+    new lootEntry(<item:minecraft:leather_leggings>, 1, 1, 1),
+    new lootEntry(<item:minecraft:leather_boots>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/axe_head/bronze>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/axe_head/copper>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/shield/bronze>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/shield/copper>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/knife/bronze>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/knife/copper>, 1, 1, 1)
 ] as lootEntry[];
 
 val forge = [
