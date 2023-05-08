@@ -220,11 +220,11 @@ val stg5 = [
     new lootEntry(<item:tfc:wood/sapling/rosewood>, 1, 1, 3),
     new lootEntry(<item:quark:blank_rune>, 1, 1, 1),
     new lootEntry(<item:minecraft:saddle>, 1, 1, 1),
-    new lootEntry(<item:tfc:metal/ingot/zinc>, 1, 2, 4),
-    new lootEntry(<item:tfc:metal/ingot/nickel>, 1, 2, 4),
-    new lootEntry(<item:tfc:metal/ingot/tin>, 1, 2, 4),
-    new lootEntry(<item:tfc:metal/ingot/bismuth>, 1, 1, 4),
-    new lootEntry(<item:tfc:metal/ingot/copper>, 1, 2, 4),
+    new lootEntry(<item:tfc:metal/ingot/zinc>, 1, 2, 3),
+    new lootEntry(<item:tfc:metal/ingot/nickel>, 1, 2, 3),
+    new lootEntry(<item:tfc:metal/ingot/tin>, 1, 2, 3),
+    new lootEntry(<item:tfc:metal/ingot/bismuth>, 1, 1, 3),
+    new lootEntry(<item:tfc:metal/ingot/copper>, 1, 2, 3),
     new lootEntry(<item:tfc:metal/ingot/wrought_iron>, 1, 1, 3),
     new lootEntry(<item:tfc:metal/ingot/cast_iron>, 1, 1, 3),
     new lootEntry(<item:tfc:metal/ingot/silver>, 1, 1, 3),
@@ -237,7 +237,9 @@ val stg5 = [
 ] as lootEntry[];
 
 val supply = [
-    new lootEntry(<item:tfc:stone/axe/sedimentary>, 3, 1, 4)
+    new lootEntry(<item:tfc:stone/axe/sedimentary>, 2, 1, 3),
+    new lootEntry(<item:tfc:metal/shield/bismuth_bronze>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/shield/black_bronze>, 1, 1, 1)
 ] as lootEntry[];
 
 val forge = [
@@ -249,7 +251,11 @@ val treasure = [
 ] as lootEntry[];
 
 val secret = [
-    new lootEntry(<item:minecraft:glow_ink_sac>, 3, 1, 4)
+    new lootEntry(<item:minecraft:book>, 3, 1, 1),
+    new lootEntry(<item:minecraft:ink_sac>, 2, 1, 3),
+    new lootEntry(<item:minecraft:glow_ink_sac>, 1, 1, 2),
+    new lootEntry(<item:tfc:powder/graphite>, 1, 1, 1),
+    new lootEntry(<item:minecraft:map>, 2, 1, 1)
 ] as lootEntry[];
 
 val library = [

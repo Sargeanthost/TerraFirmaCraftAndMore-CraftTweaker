@@ -1,4 +1,5 @@
 ### TODO
+Invar recipe: change molten wrought iron to molten cast iron
 
 # break statement is broken, you can only use 1 loop per function
 
