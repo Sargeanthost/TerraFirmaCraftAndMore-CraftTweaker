@@ -1,4 +1,4 @@
-minecraft:chests/simple_dungeon (i think this is used by quark)
+minecraft:chests/simple_dungeon
 
 champions:champion_loot
 

@@ -29,7 +29,6 @@ craftingTable.remove(<item:minecraft:blast_furnace>);
 craftingTable.remove(<item:minecraft:tnt>);
 craftingTable.remove(<item:minecraft:iron_bars>);
 craftingTable.remove(<item:minecraft:bundle>);
-craftingTable.remove(<item:minecraft:fishing_rod>);
 craftingTable.remove(<item:minecraft:name_tag>);
 craftingTable.addShaped("bundle", <item:minecraft:bundle>,[[Setup.stringTag, <item:tfc:burlap_cloth>, Setup.stringTag],[<item:tfc:burlap_cloth>, Setup.air, <item:tfc:burlap_cloth>],[<item:tfc:burlap_cloth>,<item:tfc:burlap_cloth>,<item:tfc:burlap_cloth>]]);
 craftingTable.addShaped("tnt", <item:minecraft:tnt>, 

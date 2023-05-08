@@ -8,8 +8,6 @@ get rid of mc anvil recipies, except for runes
 
 make mc crops drop nothing when broken
 
-when opening a chest in the bed room, the game dies
-
 weird hidey hole chest doesnt have a loot table?
 
 a chest in a weird room has default loot, triple check boiler plate on loot entries
@@ -53,3 +51,8 @@ gemstones can be found in:
 * cut ruby: chert
 * cut sapphire: chalk
 * cut topaz:granite
+
+https://github.com/TerraFirmaCraft/TerraFirmaCraft/blob/de653b1254206b1dd0a6177fcbacd49c092328fd/src/main/resources/data/tfc/tfc/item_heats/metal/black_bronze_chain.json 
+
+https://terrafirmacraft.github.io/Documentation/1.18.x/data/custom/#item-heats
+These seem to be datapack items

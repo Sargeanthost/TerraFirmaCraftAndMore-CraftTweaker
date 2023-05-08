@@ -8,11 +8,11 @@ public class lootEntry {
     public var min as int : get;
     public var max as int : get;
     
-    public this(item as IItemStack, weight as int, min as int, max as int) {
+    public this(item as IItemStack, weight as int, minAmt as int, maxAmt as int) {
         this.item = item;
         this.weight = weight;
-        this.min = min; 
-        this.max = max; 
+        this.min = minAmt; 
+        this.max = maxAmt; 
     }
 
     public static getRolls(random as Random, min as int, max as int) as int {

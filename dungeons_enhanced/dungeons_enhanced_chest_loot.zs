@@ -6,14 +6,47 @@ import crafttweaker.api.util.math.Random;
 import crafttweaker.api.item.IItemStack;
 
 val quarters = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:tfc:food/red_apple>, 3, 1, 3),
+    new lootEntry(<item:tfc:food/strawberry>, 3, 1, 3),
+    new lootEntry(<item:tfc:food/plum>, 3, 1, 3),
+    new lootEntry(<item:tfc:food/maize_grain>, 3, 1, 3),
+    new lootEntry(<item:tfc:food/barley_grain>, 3, 1, 3),
+    new lootEntry(<item:tfc:food/chicken>, 2, 1, 3),
+    new lootEntry(<item:tfc:food/venison>, 2, 1, 3),
+    new lootEntry(<item:tfc:food/mutton>, 2, 1, 3),
+    new lootEntry(<item:tfc:firestarter>, 4, 1, 1),
+    new lootEntry(<item:tfc:straw>, 4, 2, 4),
+    new lootEntry(<item:tfc:small_scraped_hide>, 1, 1, 1),
+    new lootEntry(<item:tfc:medium_sheepskin_hide>, 1, 1, 1),
+    new lootEntry(<item:tfc:glue>, 2, 1, 2),
+    new lootEntry(<item:minecraft:stick>, 5, 2, 5)
 ];
 val coffin = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:minercaft:bone>, 2, 1, 3),
+    new lootEntry(<item:minercaft:stick>, 2, 1, 3),
+    new lootEntery(<item:minecraft:skeleton_skull>, 1, 1, 1)
 ];
 val cellar = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:firmalife:food/nightshade_berry>, 5, 1, 3),
+    new lootEntry(<item:firmalife:food/stinky_soup>, 5, 1, 3),
+    new lootEntry(<item:firmalife:food/toast>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/frothy_coconut>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/tofu>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/oat_flatbread>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/barley_flatbread>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/wheat_flatbread>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/gouda>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/chevre>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/cheddar>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/cocoa_beans>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/pumpkin_chunks_jar>, 2, 1, 1),
+    new lootEntry(<item:firmalife:food/pineapple_jar>, 2, 1, 1),
+    new lootEntry(<item:firmalife:food/banana_jar>, 2, 1, 1),
+    new lootEntry(<item:firmalife:food/orange_jar>, 2, 1, 1),
+    new lootEntry(<item:firmalife:food/orange_jar>, 2, 1, 1),
+    new lootEntry(<item:firmalife:food/peach_jar>, 2, 1, 1),
 ];
+//sheilds and stone and maybe some medium grade tools
 val armory = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
 ];
@@ -21,7 +54,11 @@ val spring = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
 ];
 val library = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:tfc:papyrus_strip>, 2, 1, 3)
+    new lootEntry(<item:tfc:unrefined_paper>, 2, 1, 3)
+    new lootEntry(<item:minecraft:paper>, 2, 1, 3)
+    new lootEntry(<item:minecraft:book>, 2, 1, 3)
+    new lootEntry(<item:minecraft:leather>, 2, 1, 3)
 ];
 val throne = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
@@ -258,11 +295,6 @@ var hayW = 0;
 for entry in hay {
     hayW += entry.weight;
 }
-
-
-
-
-
 
 loot.modifiers.register("quarters",
     LootConditions.only(LootTableIdLootCondition.create(<resource:dungeons_enhanced:chests/castle/quarters>)),
