@@ -305,15 +305,29 @@ val treasure = [
     new lootEntry(<item:tfc_metallum:metal/ingot/thorium>, 1, 1, 3),
     new lootEntry(<item:tfc_metallum:metal/ingot/titanium>, 1, 1, 3),
     new lootEntry(<item:tfc_metallum:metal/ingot/tungsten>, 1, 1, 3),
-    new lootEntry(<item:tfc_metallum:metal/ingot/uranium>, 1, 1, 3)
+    new lootEntry(<item:tfc_metallum:metal/ingot/uranium>, 1, 1, 3),
+    new lootEntry(<item:tfc:ore/graphite>, 1, 1, 5),
+    new lootEntry(<item:tfc:ore/kaolinite>, 1, 1, 7),
+    new lootEntry(<item:tfc:ore/borax>, 1, 1, 3)
 ] as lootEntry[];
 
 val secret = [
+    new lootEntry(<item:minecraft:coal>, 4, 4, 9),
+    new lootEntry(<item:tfc:dead_torch>, 3, 1, 5),
+    new lootEntry(<item:minecraft:bone>, 3, 2, 3),
+    new lootEntry(<item:minecraft:cobweb>, 3, 1, 2),
+    new lootEntry(<item:quark:blank_rune>, 3, 1, 2),
     new lootEntry(<item:minecraft:book>, 3, 1, 1),
+    new lootEntry(<item:minecraft:paper>, 3, 1, 5),
+    new lootEntry(<item:minecraft:leather>, 2, 1, 2),
+    new lootEntry(<item:tfc:candle>, 2, 1, 5),
+    new lootEntry(<item:minecraft:feather>, 2, 1, 3),
+    new lootEntry(<item:minecraft:map>, 2, 1, 2),
+    new lootEntry(<item:tfc:powder/graphite>, 1, 1, 3),
     new lootEntry(<item:minecraft:ink_sac>, 2, 1, 3),
     new lootEntry(<item:minecraft:glow_ink_sac>, 1, 1, 2),
-    new lootEntry(<item:tfc:powder/graphite>, 1, 1, 1),
-    new lootEntry(<item:minecraft:map>, 2, 1, 1)
+    new lootEntry(<item:minecraft:writable_book>, 1, 1, 1),
+    new lootEntry(<item:tfc:ore/graphite>, 1, 1, 1)
 ] as lootEntry[];
 
 val library = [
