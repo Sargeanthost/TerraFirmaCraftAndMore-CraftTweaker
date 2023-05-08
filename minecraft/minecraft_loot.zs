@@ -10,6 +10,7 @@ import crafttweaker.api.loot.modifier.CommonLootModifiers;
 <block:minecraft:pumpkin_stem>.addLootModifier("void2354", CommonLootModifiers.clearLoot());
 <block:minecraft:melon>.addLootModifier("void2344", CommonLootModifiers.clearLoot());
 <block:minecraft:melon_stem>.addLootModifier("void2334", CommonLootModifiers.clearLoot());
+<block:minecraft:chain>.addLootModifier("void23354", CommonLootModifiers.clearLoot());
 
 <block:minecraft:potted_cactus>.addLootModifier("void",CommonLootModifiers.clearing(CommonLootModifiers.add(<item:minecraft:flower_pot>)));
 <block:minecraft:potted_dark_oak_sapling>.addLootModifier("void1",CommonLootModifiers.clearing(CommonLootModifiers.add(<item:minecraft:flower_pot>)));
@@ -19,6 +20,7 @@ import crafttweaker.api.loot.modifier.CommonLootModifiers;
 <block:minecraft:potted_spruce_sapling>.addLootModifier("void73",CommonLootModifiers.clearing(CommonLootModifiers.add(<item:minecraft:flower_pot>)));
 <block:minecraft:potted_cactus>.addLootModifier("void5",CommonLootModifiers.clearing(CommonLootModifiers.add(<item:minecraft:flower_pot>)));
 <block:minecraft:potted_acacia_sapling>.addLootModifier("void6",CommonLootModifiers.clearing(CommonLootModifiers.add(<item:minecraft:flower_pot>)));
+<block:minecraft:chain>.addLootModifier("void13354",CommonLootModifiers.clearing(CommonLootModifiers.add(<item:tfc:metal/chain/black_bronze>)));
 
 //not sure what to do with these
 // <block:minecraft:potted_oxeye_daisy>

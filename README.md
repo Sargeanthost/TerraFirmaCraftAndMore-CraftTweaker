@@ -3,6 +3,8 @@ Invar recipe: change molten wrought iron to molten cast iron
 
 # break statement is broken, you can only use 1 loop per function
 
+# need to check all mob drops
+
 change minecraft armour to give 0 protection. 
 
 get rid of mc anvil recipies, except for runes
@@ -10,6 +12,13 @@ get rid of mc anvil recipies, except for runes
 make mc crops drop nothing when broken
 
 weird hidey hole chest doesnt have a loot table?
+
+when the person clicks on an armour stand to get an item, check what hes clicking and use this to check the item. if iron, drop iron
+et. https://docs.blamejared.com/1.18/en/vanilla/api/entity/equipment/EquipmentSlot
+
+check what the candles drop
+
+drowneds can drop a copper ingot
 
 a chest in a weird room has default loot, triple check boiler plate on loot entries
 
@@ -26,8 +35,6 @@ edit enhanced dungeons loot table. https://github.com/BarionLP/DungeonsEnhanced/
 check if we can change mob's armour and can hold, if not, disable their drops
 
 change where frogs spawn? add nutrition and expiration date
-
-remove stonecutter access in future version since cant use chisel easily now
 
 make chains meltable
 

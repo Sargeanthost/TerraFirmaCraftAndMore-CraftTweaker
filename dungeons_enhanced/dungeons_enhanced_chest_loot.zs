@@ -21,28 +21,27 @@ val quarters = [
     new lootEntry(<item:tfc:glue>, 2, 1, 2),
     new lootEntry(<item:minecraft:stick>, 5, 2, 5)
 ];
+//found under stairs with no lore
 val coffin = [
     new lootEntry(<item:minecraft:bone>, 2, 1, 3),
     new lootEntry(<item:minecraft:stick>, 2, 1, 3),
     new lootEntry(<item:minecraft:skeleton_skull>, 1, 1, 1)
 ];
+//cellar is not the food kinda cellar, lots of mobs
 val cellar = [
-    new lootEntry(<item:firmalife:food/nightshade_berry>, 5, 1, 3),
-    new lootEntry(<item:firmalife:food/stinky_soup>, 5, 1, 3),
-    new lootEntry(<item:firmalife:food/toast>, 2, 1, 3),
-    new lootEntry(<item:firmalife:food/frothy_coconut>, 2, 1, 3),
-    new lootEntry(<item:firmalife:food/tofu>, 2, 1, 3),
-    new lootEntry(<item:firmalife:food/oat_flatbread>, 2, 1, 3),
-    new lootEntry(<item:firmalife:food/barley_flatbread>, 2, 1, 3),
-    new lootEntry(<item:firmalife:food/wheat_flatbread>, 2, 1, 3),
-    new lootEntry(<item:firmalife:food/gouda>, 2, 1, 3),
-    new lootEntry(<item:firmalife:food/chevre>, 2, 1, 3),
-    new lootEntry(<item:firmalife:food/cheddar>, 2, 1, 3),
-    new lootEntry(<item:firmalife:food/cocoa_beans>, 2, 1, 3),
-    new lootEntry(<item:firmalife:pumpkin_chunks_jar>, 2, 1, 1), 
-    new lootEntry(<item:firmalife:banana_jar>, 2, 1, 1),
-    new lootEntry(<item:firmalife:orange_jar>, 2, 1, 1),
-    new lootEntry(<item:firmalife:peach_jar>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/rod/cast_iron>,3,1,1),
+    new lootEntry(<item:minecraft:stick>,5,2,5),
+    new lootEntry(<item:tfc:metal/axe_head/copper>,3,1,1),
+    new lootEntry(<item:tfc:metal/chisel_head/copper>,3,1,1),
+    new lootEntry(<item:tfc:metal/propick_head/copper>,3,1,1),
+    new lootEntry(<item:tfc:metal/rod/copper>,3,1,2),
+    new lootEntry(<item:tfc:metal/shovel_head/copper>,3,1,1),
+    new lootEntry(<item:tfc:metal/unfinished_chestplate/copper>,3,1,1),
+    new lootEntry(<item:tfc:metal/unfinished_helmet/copper>,3,1,1),
+    new lootEntry(<item:tfc:metal/javelin_head/copper>,3,1,1),
+    new lootEntry(<item:tfc:metal/lamp/copper>,3,1,1),
+    new lootEntry(<item:tfc:metal/chain/black_bronze>,3,1,1),
+    new lootEntry(<item:tfc:metal/rod/black_steel>,1,1,1),
 ];
 //sheilds and stone and maybe some medium grade tools
 val armory = [
@@ -65,7 +64,22 @@ val bedroom = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
 ];
 val kitchen = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:firmalife:food/nightshade_berry>, 5, 1, 3),
+    new lootEntry(<item:firmalife:food/stinky_soup>, 5, 1, 3),
+    new lootEntry(<item:firmalife:food/toast>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/frothy_coconut>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/tofu>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/oat_flatbread>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/barley_flatbread>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/wheat_flatbread>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/gouda>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/chevre>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/cheddar>, 2, 1, 3),
+    new lootEntry(<item:firmalife:food/cocoa_beans>, 2, 1, 3),
+    new lootEntry(<item:firmalife:pumpkin_chunks_jar>, 2, 1, 1), 
+    new lootEntry(<item:firmalife:banana_jar>, 2, 1, 1),
+    new lootEntry(<item:firmalife:orange_jar>, 2, 1, 1),
+    new lootEntry(<item:firmalife:peach_jar>, 2, 1, 1)
 ];
 val prison = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
