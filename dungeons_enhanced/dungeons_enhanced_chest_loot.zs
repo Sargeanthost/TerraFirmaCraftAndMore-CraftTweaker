@@ -6,6 +6,9 @@ import crafttweaker.api.util.math.Random;
 import crafttweaker.api.item.IItemStack;
 
 val quarters = [
+    new lootEntry(<item:minecraft:stick>, 5, 2, 5),
+    new lootEntry(<item:tfc:straw>, 4, 2, 4),
+    new lootEntry(<item:tfc:firestarter>, 4, 1, 1),
     new lootEntry(<item:tfc:food/red_apple>, 3, 1, 3),
     new lootEntry(<item:tfc:food/strawberry>, 3, 1, 3),
     new lootEntry(<item:tfc:food/plum>, 3, 1, 3),
@@ -14,38 +17,65 @@ val quarters = [
     new lootEntry(<item:tfc:food/chicken>, 2, 1, 3),
     new lootEntry(<item:tfc:food/venison>, 2, 1, 3),
     new lootEntry(<item:tfc:food/mutton>, 2, 1, 3),
-    new lootEntry(<item:tfc:firestarter>, 4, 1, 1),
-    new lootEntry(<item:tfc:straw>, 4, 2, 4),
-    new lootEntry(<item:tfc:small_scraped_hide>, 1, 1, 1),
-    new lootEntry(<item:tfc:medium_sheepskin_hide>, 1, 1, 1),
     new lootEntry(<item:tfc:glue>, 2, 1, 2),
-    new lootEntry(<item:minecraft:stick>, 5, 2, 5)
+    new lootEntry(<item:minecraft:painting>, 1, 1, 1),
+    new lootEntry(<item:tfc:silk_cloth>, 1, 1, 1),
+    new lootEntry(<item:tfc:small_scraped_hide>, 1, 1, 1),
+    new lootEntry(<item:tfc:medium_sheepskin_hide>, 1, 1, 1)
 ];
 //found under stairs with no lore
 val coffin = [
-    new lootEntry(<item:minecraft:bone>, 2, 1, 3),
-    new lootEntry(<item:minecraft:stick>, 2, 1, 3),
+    new lootEntry(<item:minecraft:bone>, 3, 1, 3),
+    new lootEntry(<item:minecraft:cobweb>, 2, 1, 2),
+    new lootEntry(<item:tfc:burlap_cloth>, 2, 1, 3),
+    new lootEntry(<item:minecraft:stick>, 2, 1, 2),
     new lootEntry(<item:minecraft:skeleton_skull>, 1, 1, 1)
 ];
 //cellar is not the food kinda cellar, lots of mobs
 val cellar = [
-    new lootEntry(<item:tfc:metal/rod/cast_iron>,3,1,1),
-    new lootEntry(<item:minecraft:stick>,5,2,5),
-    new lootEntry(<item:tfc:metal/axe_head/copper>,3,1,1),
-    new lootEntry(<item:tfc:metal/chisel_head/copper>,3,1,1),
-    new lootEntry(<item:tfc:metal/propick_head/copper>,3,1,1),
-    new lootEntry(<item:tfc:metal/rod/copper>,3,1,2),
-    new lootEntry(<item:tfc:metal/shovel_head/copper>,3,1,1),
-    new lootEntry(<item:tfc:metal/unfinished_chestplate/copper>,3,1,1),
-    new lootEntry(<item:tfc:metal/unfinished_helmet/copper>,3,1,1),
-    new lootEntry(<item:tfc:metal/javelin_head/copper>,3,1,1),
-    new lootEntry(<item:tfc:metal/lamp/copper>,3,1,1),
-    new lootEntry(<item:tfc:metal/chain/black_bronze>,3,1,1),
-    new lootEntry(<item:tfc:metal/rod/black_steel>,1,1,1),
+    new lootEntry(<item:minecraft:stick>, 5, 2, 5),
+    new lootEntry(<item:tfc:metal/axe_head/copper>, 3, 1, 1),
+    new lootEntry(<item:tfc:metal/chisel_head/copper>, 3, 1, 1),
+    new lootEntry(<item:tfc:metal/propick_head/copper>, 3, 1, 1),
+    new lootEntry(<item:tfc:metal/shovel_head/copper>, 3, 1, 1),
+    new lootEntry(<item:tfc:metal/lamp/copper>, 3, 1, 1),
+    new lootEntry(<item:tfc:metal/rod/copper>, 2, 1, 2),
+    new lootEntry(<item:tfc:metal/chain/black_bronze>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/unfinished_chestplate/copper>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/unfinished_helmet/copper>, 1, 1, 1)
 ];
 //sheilds and stone and maybe some medium grade tools
 val armory = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:minecraft:coal>, 5, 1, 4),
+    new lootEntry(<item:minecraft:stick>, 4, 1, 3),
+    new lootEntry(<item:minecraft:string>, 4, 1, 2),
+    new lootEntry(<item:tfc:wood/log/oak>, 4, 1, 1),
+    new lootEntry(<item:tfc:wood/planks/oak>, 3, 1, 2),
+    new lootEntry(<item:minecraft:arrow>, 3, 2, 5),
+    new lootEntry(<item:tfc:stone/javelin/sedimentary>, 3, 1, 3),
+    new lootEntry(<item:tfc:stone/hammer/sedimentary>, 3, 1, 1),
+    new lootEntry(<item:tfc:ceramic/axe_head_mold>, 2, 1, 2),
+    new lootEntry(<item:tfc:ceramic/javelin_head_mold>, 2, 1, 2),
+    new lootEntry(<item:tfc:ceramic/knife_blade_mold>, 2, 1, 2),
+    new lootEntry(<item:tfc:ceramic/mace_head_mold>, 2, 1, 2),
+    new lootEntry(<item:tfc:ceramic/pickaxe_head_mold>, 2, 1, 2),
+    new lootEntry(<item:tfc:ceramic/scythe_blade_mold>, 2, 1, 2),
+    new lootEntry(<item:tfc:metal/javelin_head/bronze>, 2, 1, 3),
+    new lootEntry(<item:tfc:metal/mace_head/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/sword_blade/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/helmet/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/chestplate/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/greaves/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/boots/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/knife/copper>, 2, 1, 2),
+    new lootEntry(<item:tfc:metal/sword/copper>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/helmet/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/chestplate/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/greaves/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/boots/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/sword_blade/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/knife/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/anvil/copper>, 1, 1, 1)
 ];
 val spring = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
@@ -313,7 +343,7 @@ loot.modifiers.register("quarters",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+        for i in 0 .. lootEntry.getRolls(random, 4, 7) {
             list.add(lootEntry.getWeightedItem(random, quarters, quartersW));
         }
         return list;
@@ -324,7 +354,7 @@ loot.modifiers.register("coffin",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+        for i in 0 .. lootEntry.getRolls(random, 3, 5) {
             list.add(lootEntry.getWeightedItem(random, coffin, coffinW));
         }
         return list;
@@ -335,7 +365,7 @@ loot.modifiers.register("cellar",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+        for i in 0 .. lootEntry.getRolls(random, 3, 6) {
             list.add(lootEntry.getWeightedItem(random, cellar, cellarW));
         }
         return list;
@@ -346,7 +376,7 @@ loot.modifiers.register("armory",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+        for i in 0 .. lootEntry.getRolls(random, 3, 6) {
             list.add(lootEntry.getWeightedItem(random, armory, armoryW));
         }
         return list;
