@@ -18,8 +18,7 @@ val quarters = [
     new lootEntry(<item:tfc:food/venison>, 2, 1, 3),
     new lootEntry(<item:tfc:food/mutton>, 2, 1, 3),
     new lootEntry(<item:tfc:glue>, 2, 1, 2),
-    new lootEntry(<item:minecraft:painting>, 1, 1, 1),
-    new lootEntry(<item:tfc:silk_cloth>, 1, 1, 1),
+    new lootEntry(<item:tfc:wool_cloth>, 1, 1, 1),
     new lootEntry(<item:tfc:small_scraped_hide>, 1, 1, 1),
     new lootEntry(<item:tfc:medium_sheepskin_hide>, 1, 1, 1)
 ];
@@ -75,23 +74,52 @@ val armory = [
     new lootEntry(<item:tfc:metal/boots/wrought_iron>, 1, 1, 1),
     new lootEntry(<item:tfc:metal/sword_blade/wrought_iron>, 1, 1, 1),
     new lootEntry(<item:tfc:metal/knife/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/helmet/black_steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/chestplate/black_steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/greaves/black_steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/boots/black_steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/knife/black_steel>, 1, 1, 1),
     new lootEntry(<item:tfc:metal/anvil/copper>, 1, 1, 1)
 ];
 val spring = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:firmalife:food/pickled_egg>, 1, 12, 12)
 ];
 val library = [
-    new lootEntry(<item:tfc:papyrus_strip>, 2, 1, 3),
-    new lootEntry(<item:tfc:unrefined_paper>, 2, 1, 3),
-    new lootEntry(<item:minecraft:paper>, 2, 1, 3),
+    new lootEntry(<item:minecraft:cobweb>, 4, 1, 2),
+    new lootEntry(<item:tfc:papyrus_strip>, 3, 1, 3),
+    new lootEntry(<item:tfc:unrefined_paper>, 3, 1, 3),
+    new lootEntry(<item:minecraft:paper>, 3, 3, 7),
     new lootEntry(<item:minecraft:book>, 2, 1, 3),
-    new lootEntry(<item:minecraft:leather>, 2, 1, 3)
+    new lootEntry(<item:minecraft:leather>, 2, 1, 2),
+    new lootEntry(<item:tfc:burlap_cloth>, 2, 1, 2),
+    new lootEntry(<item:tfc:candle>, 2, 2, 5),
+    new lootEntry(<item:minecraft:feather>, 2, 1, 4),
+    new lootEntry(<item:minecraft:ink_sac>, 2, 1, 2),
+    new lootEntry(<item:tfc:powder/graphite>, 2, 1, 3),
+    new lootEntry(<item:minecraft:map>, 1, 1, 2),
+    new lootEntry(<item:tfc:metal/knife/copper>, 1, 1, 2),
+    new lootEntry(<item:tfc:ore/graphite>, 1, 1, 5)
 ];
 val throne = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:minecraft:cobweb>, 4, 1, 2),
+    new lootEntry(<item:minecraft:bone>, 3, 1, 3),
+    new lootEntry(<item:tfc:metal/ingot/gold>, 3, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/silver>, 3, 1, 3),
+    new lootEntry(<item:tfc:silk_cloth>, 2, 2, 5),
+    new lootEntry(<item:tfc:gem/diamond>, 2, 1, 1),
+    new lootEntry(<item:tfc:gem/ruby>, 2, 1, 1),
+    new lootEntry(<item:tfc:gem/emerald>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/rod/gold>, 1, 1, 1),
+    new lootEntry(<item:minecraft:blaze_powder>, 1, 1, 5),
+    new lootEntry(<item:tfc:metal/helmet/steel>, 1, 1, 1)
 ];
 val bedroom = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:minecraft:stick>, 5, 2, 5),
+    new lootEntry(<item:tfc:straw>, 4, 2, 4),
+    new lootEntry(<item:minecraft:painting>, 2, 1, 1),
+    new lootEntry(<item:tfc:silk_cloth>, 1, 1, 1),
+    new lootEntry(<item:tfc:small_scraped_hide>, 1, 1, 1),
+    new lootEntry(<item:tfc:medium_sheepskin_hide>, 1, 1, 1)
 ];
 val kitchen = [
     new lootEntry(<item:firmalife:food/nightshade_berry>, 5, 1, 3),
@@ -376,7 +404,7 @@ loot.modifiers.register("armory",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. lootEntry.getRolls(random, 3, 6) {
+        for i in 0 .. lootEntry.getRolls(random, 5, 9) {
             list.add(lootEntry.getWeightedItem(random, armory, armoryW));
         }
         return list;
@@ -387,7 +415,7 @@ loot.modifiers.register("spring",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+        for i in 0 .. lootEntry.getRolls(random, 1, 1) {
             list.add(lootEntry.getWeightedItem(random, spring, springW));
         }
         return list;
@@ -398,7 +426,7 @@ loot.modifiers.register("de_library",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+        for i in 0 .. lootEntry.getRolls(random, 7, 14) {
             list.add(lootEntry.getWeightedItem(random, library, libraryW));
         }
         return list;
@@ -409,7 +437,7 @@ loot.modifiers.register("throne",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+        for i in 0 .. lootEntry.getRolls(random, 5, 7) {
             list.add(lootEntry.getWeightedItem(random, throne, throneW));
         }
         return list;

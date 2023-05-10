@@ -317,6 +317,8 @@ val secret = [
     new lootEntry(<item:minecraft:bone>, 3, 2, 3),
     new lootEntry(<item:minecraft:cobweb>, 3, 1, 2),
     new lootEntry(<item:quark:blank_rune>, 3, 1, 2),
+    new lootEntry(<item:tfc:papyrus_strip>, 3, 2, 5),
+    new lootEntry(<item:tfc:unrefined_paper>, 3, 1, 3),
     new lootEntry(<item:minecraft:book>, 3, 1, 1),
     new lootEntry(<item:minecraft:paper>, 3, 1, 5),
     new lootEntry(<item:minecraft:leather>, 2, 1, 2),
@@ -473,6 +475,7 @@ val stg4and5r = [
     new lootEntry(<item:tfc:seeds/potato>, 2, 2, 4),
     new lootEntry(<item:tfc:seeds/tomato>, 2, 2, 4),
     new lootEntry(<item:tfc:seeds/squash>, 2, 2, 4),
+    new lootEntry(<item:minecraft:blaze_rod>, 2, 1, 5),
     new lootEntry(<item:tfc:ceramic/jug>.withTag({
         fluid: {Amount: 100 as int, 
         FluidName: "minecraft:water" as string}}), 1, 2, 2),
