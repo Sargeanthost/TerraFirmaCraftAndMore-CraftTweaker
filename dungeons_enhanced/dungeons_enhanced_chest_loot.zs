@@ -253,7 +253,24 @@ val desertCoffin = [
     new lootEntry(<item:tfc:metal/sword/copper>, 1, 1, 1)
 ];
 val witchTower = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:minecraft:glass_bottle>, 4, 1, 8),
+    new lootEntry(<item:minecraft:stick>, 4, 1, 3),
+    new lootEntry(<item:tfc:wool_cloth>, 4, 1, 3),
+    new lootEntry(<item:tfc:food/red_apple>, 4, 1, 3),
+    new lootEntry(<item:tfc:firestarter>, 4, 1, 1),
+    new lootEntry(<item:minecraft:glowstone_dust>, 3, 1, 9),
+    new lootEntry(<item:minecraft:redstone>, 3, 1, 9),
+    new lootEntry(<item:minecraft:nether_wart>, 3, 1, 9),
+    new lootEntry(<item:minecraft:fermented_spider_eye>, 3, 1, 9),
+    new lootEntry(<item:minecraft:spider_eye>, 2, 1, 6),
+    new lootEntry(<item:minecraft:sugar>, 2, 1, 6),
+    new lootEntry(<item:minecraft:blaze_powder>, 2, 1, 6),
+    new lootEntry(<item:minecraft:magma_cream>, 2, 1, 6),
+    new lootEntry(<item:minecraft:glistering_melon_slice>, 1, 1, 4),
+    new lootEntry(<item:minecraft:golden_carrot>, 1, 1, 4),
+    new lootEntry(<item:minecraft:ghast_tear>, 1, 1, 4),
+    new lootEntry(<item:minecraft:rabbit_foot>, 1, 1, 4),
+    new lootEntry(<item:minecraft:brewing_stand>, 1, 1, 1)
 ];
 val desertTomb = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
