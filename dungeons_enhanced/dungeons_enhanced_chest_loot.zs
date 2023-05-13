@@ -238,19 +238,25 @@ val desertFloor = [
     new lootEntry(<item:tfc:rock/loose/limestone>, 2, 1, 2),
     new lootEntry(<item:tfc:small_scraped_hide>, 2, 1, 2),
     new lootEntry(<item:tfc:burlap_cloth>, 2, 1, 3),
-    new lootEntry(<item:tfc:metal/knife/copper>, 1, 1, 1)
+    new lootEntry(<item:tfc:metal/knife/copper>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/sword_blade/wrought_iron>, 1, 1, 1)
 ];
 val desertCoffin = [
     new lootEntry(<item:minecraft:bone>, 3, 1, 1),
     new lootEntry(<item:minecraft:cobweb>, 2, 1, 2),
     new lootEntry(<item:tfc:burlap_cloth>, 2, 1, 3),
     new lootEntry(<item:minecraft:stick>, 2, 1, 2),
+    new lootEntry(<item:tfc:metal/helmet/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/chestplate/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/greaves/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/boots/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/sword/copper>, 2, 1, 1),
     new lootEntry(<item:minecraft:skeleton_skull>, 1, 1, 1),
-    new lootEntry(<item:tfc:metal/helmet/copper>, 1, 1, 1),
-    new lootEntry(<item:tfc:metal/chestplate/copper>, 1, 1, 1),
-    new lootEntry(<item:tfc:metal/greaves/copper>, 1, 1, 1),
-    new lootEntry(<item:tfc:metal/boots/copper>, 1, 1, 1),
-    new lootEntry(<item:tfc:metal/sword/copper>, 1, 1, 1)
+    new lootEntry(<item:tfc:metal/helmet/steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/chestplate/steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/greaves/steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/boots/steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/sword_blade/steel>, 1, 1, 1)
 ];
 val witchTower = [
     new lootEntry(<item:minecraft:glass_bottle>, 4, 1, 8),
@@ -273,16 +279,70 @@ val witchTower = [
     new lootEntry(<item:minecraft:brewing_stand>, 1, 1, 1)
 ];
 val desertTomb = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:minecraft:bone>, 3, 1, 1),
+    new lootEntry(<item:minecraft:dead_bush>, 3, 1, 1),
+    new lootEntry(<item:minecraft:stick>, 3, 2, 5),
+    new lootEntry(<item:tfc:ceramic/bowl>, 3, 1, 1),
+    new lootEntry(<item:tfc:ceramic/jug>, 2, 1, 1),
+    new lootEntry(<item:tfc:rock/loose/claystone>, 2, 1, 2),
+    new lootEntry(<item:tfc:rock/loose/gabbro>, 2, 1, 2),
+    new lootEntry(<item:tfc:rock/loose/limestone>, 2, 1, 2),
+    new lootEntry(<item:minecraft:cobweb>, 2, 1, 2),
+    new lootEntry(<item:tfc:burlap_cloth>, 2, 1, 3),
+    new lootEntry(<item:minecraft:stick>, 2, 1, 2),
+    new lootEntry(<item:tfc:metal/helmet/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/chestplate/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/greaves/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/boots/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/sword/copper>, 2, 1, 1),
+    new lootEntry(<item:minecraft:skeleton_skull>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/helmet/steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/chestplate/steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/greaves/steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/boots/steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/sword_blade/steel>, 1, 1, 1)
 ];
 val etMain = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:tfc:food/bluegill>, 5, 1, 4),
+    new lootEntry(<item:tfc:food/cod>, 5, 1, 7),
+    new lootEntry(<item:tfc:food/salmon>, 5, 1, 4),
+    new lootEntry(<item:tfc:food/tropical_fish>, 5, 1, 3),
+    new lootEntry(<item:minecraft:leather_boots>, 4, 1, 1),
+    new lootEntry(<item:minecraft:leather_leggings>, 3, 1, 1),
+    new lootEntry(<item:minecraft:leather_chestplate>, 3, 1, 1),
+    new lootEntry(<item:minecraft:leather_helmet>, 3, 1, 1)
 ];
 val etElder = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
 ];
 val deepCrypt = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:minecraft:stick>, 5, 2, 5),
+    new lootEntry(<item:minecraft:bone>, 4, 1, 2),
+    new lootEntry(<item:minecraft:cobweb>, 4, 1, 2),
+    new lootEntry(<item:firmalife:food/oat_flatbread>, 3, 1, 3),
+    new lootEntry(<item:firmalife:food/barley_flatbread>, 3, 1, 3),
+    new lootEntry(<item:firmalife:food/wheat_flatbread>, 3, 1, 3),
+    new lootEntry(<item:tfc:metal/axe_head/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/pickaxe_head/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/shovel_head/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/lamp/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/unfinished_chestplate/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/unfinished_helmet/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/knife/copper>, 2, 1, 2),
+    new lootEntry(<item:tfc:metal/sword/copper>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/helmet/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/chestplate/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/greaves/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/boots/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/sword_blade/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/knife/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/copper>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/lead>, 1, 1, 2),
+    new lootEntry(<item:tfc:metal/ingot/nickel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/tin>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/zinc>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/cast_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/steel>, 1, 1, 1)
 ];
 val ipGarden = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
@@ -312,7 +372,33 @@ val mmTreasure = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
 ];
 val largeDungeon = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:minecraft:stick>, 5, 2, 5),
+    new lootEntry(<item:minecraft:bone>, 4, 1, 2),
+    new lootEntry(<item:minecraft:cobweb>, 4, 1, 2),
+    new lootEntry(<item:firmalife:food/oat_flatbread>, 3, 1, 3),
+    new lootEntry(<item:firmalife:food/barley_flatbread>, 3, 1, 3),
+    new lootEntry(<item:firmalife:food/wheat_flatbread>, 3, 1, 3),
+    new lootEntry(<item:tfc:metal/axe_head/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/pickaxe_head/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/shovel_head/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/lamp/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/unfinished_chestplate/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/unfinished_helmet/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/knife/copper>, 2, 1, 2),
+    new lootEntry(<item:tfc:metal/sword/copper>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/helmet/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/chestplate/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/greaves/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/boots/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/sword_blade/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/knife/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/copper>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/lead>, 1, 1, 2),
+    new lootEntry(<item:tfc:metal/ingot/nickel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/tin>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/zinc>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/cast_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/steel>, 1, 1, 1)
 ];
 val ruinedBuilding = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
@@ -351,7 +437,35 @@ val mushroom = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
 ];
 val flyingDutchman = [
-    new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+    new lootEntry(<item:minecraft:bone>, 5, 1, 2),
+    new lootEntry(<item:minecraft:cobweb>, 5, 1, 2),
+    new lootEntry(<item:tfc:burlap_cloth>, 4, 1, 3),
+    new lootEntry(<item:minecraft:stick>, 4, 2, 5),
+    new lootEntry(<item:quark:rope>, 3, 2, 7),
+    new lootEntry(<item:tfc:food/bluegill>, 3, 1, 4),
+    new lootEntry(<item:tfc:food/cod>, 3, 1, 7),
+    new lootEntry(<item:tfc:food/salmon>, 3, 1, 4),
+    new lootEntry(<item:tfc:food/tropical_fish>, 3, 1, 3),
+    new lootEntry(<item:minecraft:leather_boots>, 3, 1, 1),
+    new lootEntry(<item:minecraft:leather_leggings>, 2, 1, 1),
+    new lootEntry(<item:minecraft:leather_chestplate>, 2, 1, 1),
+    new lootEntry(<item:minecraft:leather_helmet>, 2, 1, 1),
+    new lootEntry(<item:minecraft:skeleton_skull>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/knife/copper>, 2, 1, 4),
+    new lootEntry(<item:tfc:metal/sword/copper>, 2, 1, 2),
+    new lootEntry(<item:tfc:metal/fishing_rod/copper>, 2, 1, 2),
+    new lootEntry(<item:tfc:metal/javelin/copper>, 2, 1, 3),
+    new lootEntry(<item:tfc:metal/helmet/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/chestplate/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/greaves/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/boots/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/sword_blade/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/knife/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/helmet/steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/chestplate/steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/greaves/steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/boots/steel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/sword_blade/steel>, 1, 1, 1)
 ];
 val sunkenShrine = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
@@ -361,6 +475,35 @@ val undeadTreasure = [
 ];
 val hay = [
     new lootEntry(<item:tfc:food/red_apple>, 2, 1, 3)
+];
+val dVariant = [
+    new lootEntry(<item:minecraft:stick>, 5, 2, 5),
+    new lootEntry(<item:minecraft:bone>, 4, 1, 2),
+    new lootEntry(<item:minecraft:cobweb>, 4, 1, 2),
+    new lootEntry(<item:firmalife:food/oat_flatbread>, 3, 1, 3),
+    new lootEntry(<item:firmalife:food/barley_flatbread>, 3, 1, 3),
+    new lootEntry(<item:firmalife:food/wheat_flatbread>, 3, 1, 3),
+    new lootEntry(<item:tfc:metal/axe_head/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/pickaxe_head/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/shovel_head/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/lamp/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/unfinished_chestplate/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/unfinished_helmet/copper>, 2, 1, 1),
+    new lootEntry(<item:tfc:metal/knife/copper>, 2, 1, 2),
+    new lootEntry(<item:tfc:metal/sword/copper>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/helmet/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/chestplate/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/greaves/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/boots/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/sword_blade/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/knife/wrought_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/copper>, 1, 1, 3),
+    new lootEntry(<item:tfc_metallum:metal/ingot/lead>, 1, 1, 2),
+    new lootEntry(<item:tfc:metal/ingot/nickel>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/tin>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/zinc>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/cast_iron>, 1, 1, 1),
+    new lootEntry(<item:tfc:metal/ingot/steel>, 1, 1, 1)
 ];
 
 var quartersW = 0;
@@ -506,6 +649,10 @@ for entry in undeadTreasure {
 var hayW = 0;
 for entry in hay {
     hayW += entry.weight;
+}
+var dVariantW = 0;
+for entry in dVariant {
+    dVariantW += entry.weight;
 }
 
 loot.modifiers.register("quarters",
@@ -901,6 +1048,17 @@ loot.modifiers.register("desert_temple_floor",
         var list = new stdlib.List<IItemStack>();
         for i in 0 .. lootEntry.getRolls(random, 6, 9) {
             list.add(lootEntry.getWeightedItem(random, desertFloor, desertFloorW));
+        }
+        return list;
+    }
+);
+loot.modifiers.register("dungeon_variant",
+    LootConditions.only(LootTableIdLootCondition.create(<resource:dungeons_enhanced:dungeon_variant>)),
+    (drops, context) => {
+        var random = context.random;
+        var list = new stdlib.List<IItemStack>();
+        for i in 0 .. lootEntry.getRolls(random, 6, 9) {
+            list.add(lootEntry.getWeightedItem(random, dVariant, dVariantW));
         }
         return list;
     }
