@@ -317,6 +317,8 @@ val secret = [
     new lootEntry(<item:minecraft:bone>, 3, 2, 3),
     new lootEntry(<item:minecraft:cobweb>, 3, 1, 2),
     new lootEntry(<item:quark:blank_rune>, 3, 1, 2),
+    new lootEntry(<item:tfc:papyrus_strip>, 3, 2, 5),
+    new lootEntry(<item:tfc:unrefined_paper>, 3, 1, 3),
     new lootEntry(<item:minecraft:book>, 3, 1, 1),
     new lootEntry(<item:minecraft:paper>, 3, 1, 5),
     new lootEntry(<item:minecraft:leather>, 2, 1, 2),
@@ -473,6 +475,7 @@ val stg4and5r = [
     new lootEntry(<item:tfc:seeds/potato>, 2, 2, 4),
     new lootEntry(<item:tfc:seeds/tomato>, 2, 2, 4),
     new lootEntry(<item:tfc:seeds/squash>, 2, 2, 4),
+    new lootEntry(<item:minecraft:blaze_rod>, 2, 1, 5),
     new lootEntry(<item:tfc:ceramic/jug>.withTag({
         fluid: {Amount: 100 as int, 
         FluidName: "minecraft:water" as string}}), 1, 2, 2),
@@ -667,7 +670,7 @@ loot.modifiers.register("treasure",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. lootEntry.getRolls(random, 4, 6) {
+        for i in 0 .. lootEntry.getRolls(random, 5, 9) {
             list.add(lootEntry.getWeightedItem(random, treasure, treasuretotw));
         }
         return list;
@@ -679,7 +682,7 @@ loot.modifiers.register("secret_room",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. lootEntry.getRolls(random, 8, 10) {
+        for i in 0 .. lootEntry.getRolls(random, 5, 8) {
             list.add(lootEntry.getWeightedItem(random, secret, secrettotw));
         }
         return list;
@@ -715,7 +718,7 @@ loot.modifiers.register("stage_1rare",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. lootEntry.getRolls(random, 3, 8) {
+        for i in 0 .. lootEntry.getRolls(random, 6, 10) {
             list.add(lootEntry.getWeightedItem(random, stg1r, stg1rtotw));
         }
         return list;
@@ -727,7 +730,7 @@ loot.modifiers.register("stage_2and3rare",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. lootEntry.getRolls(random, 5, 10) {
+        for i in 0 .. lootEntry.getRolls(random, 6, 10) {
             list.add(lootEntry.getWeightedItem(random, stg2and3r, stg2and3rtotw));
         }
         return list;
@@ -739,7 +742,7 @@ loot.modifiers.register("stage_4and5rare",
     (drops, context) => {
         var random = context.random;
         var list = new stdlib.List<IItemStack>();
-        for i in 0 .. lootEntry.getRolls(random, 7, 12) {
+        for i in 0 .. lootEntry.getRolls(random, 6, 10) {
             list.add(lootEntry.getWeightedItem(random, stg4and5r, stg4and5rtotw));
         }
         return list;
